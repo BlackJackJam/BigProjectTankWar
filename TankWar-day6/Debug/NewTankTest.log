@@ -1,0 +1,8 @@
+﻿  Box.cpp
+  Bullet.cpp
+  EnemyTank.cpp
+  main.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar-day6\main.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  MainTank.cpp
+  正在生成代码...
+  NewTankTest.vcxproj -> C:\Users\JimmyLin\Desktop\Code\cpp\BigProject2\BigProjectTankWar\TankWar-day6\Debug\NewTankTest.exe

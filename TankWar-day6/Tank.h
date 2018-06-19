@@ -23,6 +23,10 @@ public:
 
 		m_bDisappear = false;
 		m_bNeedShoot = false;
+		MaxLoad = 5;
+		Load = MaxLoad;
+		NeedLoad = FALSE;
+		Health = 100;
 	}
 
 	~Tank(){}
@@ -68,6 +72,33 @@ public:
 		return m_bNeedShoot;
 	}
 
+	void SetHealth(int SHealth)
+	{
+		Health = SHealth;
+	}
+
+	void Bleed(int BleedN)
+	{
+		SetHealth(Health - BleedN);
+	}
+
+	void Reload()
+	{
+		if (Load == 0)
+		{
+			NeedLoad = TRUE;
+		}
+
+		if (NeedLoad)
+		{
+			Load++;
+			if (Load == MaxLoad)
+			{
+				NeedLoad = !NeedLoad;
+			}
+		}
+	}
+
 protected:
 	void CalculateSphere()
 	{
@@ -75,6 +106,14 @@ protected:
 	}
 
 	bool m_bNeedShoot;
+
+	int Health;
+
+	int Load;
+
+	int MaxLoad;
+
+	bool NeedLoad;
 };
 
 #endif

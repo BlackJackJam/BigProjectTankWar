@@ -114,9 +114,12 @@ void MainTank::CalculateSphere()
 
 void MainTank::Shoot(list<Object*>& lstBullets)
 {
-	Bullet* pBullet = new Bullet(m_pos, m_dir, m_color);
+	if (NeedLoad == FALSE)
+	{
+		Bullet* pBullet = new Bullet(m_pos, m_dir, m_color);
 
-	lstBullets.push_back(pBullet);
+		lstBullets.push_back(pBullet);
+	}
 }
 
 void MainTank::Boom(list<Object*>& lstBombs)

@@ -10,6 +10,7 @@
 #include "MainTank.h"
 #include "EnemyTank.h"
 #include "Utils/Shape.h"
+#include "Box.h"
 
 using namespace std;
 

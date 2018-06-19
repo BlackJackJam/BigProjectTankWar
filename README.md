@@ -12,3 +12,10 @@ Also, if possible, I want this game to become a system app.
 
 ## Developer
 **BlackJackJam**
+
+## Process
+### June 19
+1. Add header"Box", processing on special weapon
+2. Add header"Group", processing on group system
+3. Add load system
+4. Processing on Health counting system

@@ -33,6 +33,10 @@ public:
 
 protected:
 	void CalculateSphere();
+
+	int BulletType;
+
+	int Power;
 };
 
 #endif
