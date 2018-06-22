@@ -3,6 +3,7 @@
 #define __TANK_H__
 
 #include "Object.h"
+#include "Weapon.h"
 
 using namespace std;
 
@@ -15,12 +16,10 @@ public:
 	Tank(int px, int py, double rdir, SIDE si);
 	~Tank();
 	virtual void display();
-	virtual int ShowPosX();
-	virtual int ShowPosY();
-	virtual double ShowDir();
 protected:
 	SIDE side;
 	int health;
+	WEAPONTYPE CurrentWeapon;
 };
 
 #endif // !__TANK_H__

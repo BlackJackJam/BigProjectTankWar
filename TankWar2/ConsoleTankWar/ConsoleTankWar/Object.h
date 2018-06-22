@@ -12,9 +12,9 @@ public:
 	Object();
 	virtual ~Object();
 	virtual void display();
-	virtual int ShowPosX();
-	virtual int ShowPosY();
-	virtual double ShowDir();
+	int ShowPosX();
+	int ShowPosY();
+	double ShowDir();
 protected:
 	int x;
 	int y;

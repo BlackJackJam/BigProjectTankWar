@@ -45,6 +45,15 @@
     <ClInclude Include="Weapon.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MiniGun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Drone.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -72,6 +81,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Weapon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniGun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Drone.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

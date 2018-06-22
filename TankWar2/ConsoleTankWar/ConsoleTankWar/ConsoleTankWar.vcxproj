@@ -149,7 +149,10 @@
   <ItemGroup>
     <ClInclude Include="Box.h" />
     <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Drone.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="MiniGun.h" />
+    <ClInclude Include="RandomP.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Tank.h" />
@@ -162,8 +165,11 @@
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="ConsoleTankWar.cpp" />
+    <ClCompile Include="Drone.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MiniGun.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="RandomP.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
