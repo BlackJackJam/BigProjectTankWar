@@ -4,12 +4,25 @@
 
 #include <graphics.h>
 
-class object
+using namespace std;
+
+class Object
 {
 public:
-	object();
-	virtual ~object();
-
+	Object();
+	virtual ~Object();
+	virtual void display();
+	virtual int ShowPosX();
+	virtual int ShowPosY();
+	virtual double ShowDir();
+protected:
+	int x;
+	int y;
+	double dir;
+	int pace;
+	bool exist;
+	bool visible;
+	int sphere;
 };
 
 #endif
