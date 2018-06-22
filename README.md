@@ -19,3 +19,9 @@ Also, if possible, I want this game to become a system app.
 2. Add header"Group", processing on group system
 3. Add load system
 4. Processing on Health counting system
+
+### June 22
+1. Start new coeds
+2. New sturcture is being processed
+3. Caution: Sample codes can be refered to, but **TRY NOT TO** copy the sample codes.
+4. New STL model is now being used: use "deque" to replace "list"
