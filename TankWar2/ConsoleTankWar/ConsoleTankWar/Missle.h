@@ -10,11 +10,8 @@ class Missle :public Object, public Weapon
 public:
 	Missle();
 	~Missle();
-	bool checkload();
-	void launch();
 	void display();
 protected:
-	static int load;
 };
 
 #endif // !__MISSLE_H__

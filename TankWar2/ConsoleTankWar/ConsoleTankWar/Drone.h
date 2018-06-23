@@ -11,11 +11,8 @@ class Drone :public Object, public Weapon
 public:
 	Drone();
 	~Drone();
-	bool checkload();
 	void display();
-	void launch();
 protected:
-	static int load;
 };
 
 #endif // !__DRONE_H__

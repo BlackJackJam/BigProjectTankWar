@@ -1,2 +1,150 @@
-﻿  ConsoleTankWar.cpp
-  ConsoleTankWar.vcxproj -> C:\Users\JimmyLin\Desktop\Code\cpp\BigProject2\BigProjectTankWar\TankWar2\ConsoleTankWar\Debug\ConsoleTankWar.exe
+﻿  Box.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(5): error C2653: “Box”: 不是类或命名空间名称
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(6): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(7): error C2065: “RandomP”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(7): error C2146: 语法错误: 缺少“;”(在标识符“B”的前面)
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(7): error C2065: “B”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(7): error C2065: “X”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(7): error C2065: “Y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(7): error C2065: “E”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(9): error C2065: “X”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(9): error C2228: “.uniform”的左边必须有类/结构/联合
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(9): note: 类型是“unknown-type”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(9): error C2065: “WIDTH”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(10): error C2065: “Y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(10): error C2228: “.uniform”的左边必须有类/结构/联合
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(10): note: 类型是“unknown-type”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(10): error C2065: “HEIGHT”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(11): error C2065: “B”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(11): error C2228: “.uniform”的左边必须有类/结构/联合
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(11): note: 类型是“unknown-type”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(15): error C2065: “tpp”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(15): error C2065: “DRONE”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(18): error C2065: “tpp”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(18): error C2065: “MISSLE”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(21): error C2065: “tpp”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(21): error C2065: “MISSLE”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(24): error C2065: “tpp”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(24): error C2065: “FIRE”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(27): error C2065: “tpp”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(27): error C2065: “FIRE”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(32): error C2065: “x”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(33): error C2065: “y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(34): error C2065: “dir”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(35): error C2065: “sphere”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(36): error C2065: “E”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(36): error C2228: “.poisson”的左边必须有类/结构/联合
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(36): note: 类型是“unknown-type”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(37): error C2065: “pace”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(38): error C2065: “exist”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(39): error C2065: “exist”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(40): error C2065: “visible”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(41): warning C4508: “Box”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(43): error C2523: “Box::~Box”: 析构函数 标记不匹配
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(43): error C2510: “Box”:“::”的左边必须是类/结构/联合
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(44): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(44): error C2084: 函数“int Box(void)”已有主体
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\box.cpp(5): note: 参见“Box”的前一个定义
+  Bullet.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(4): error C2653: “Bullet”: 不是类或命名空间名称
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(6): error C2065: “power”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(7): error C2065: “x”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(8): error C2065: “y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(9): error C2065: “dir”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(10): error C2065: “visible”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(11): error C2065: “exist”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(12): error C2065: “sphere”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(13): error C2065: “pace”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(14): error C2065: “range”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(15): error C2065: “mile”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(16): warning C4508: “Bullet”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(18): error C2510: “Bullet”:“::”的左边必须是类/结构/联合
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(20): error C2065: “power”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(21): error C2065: “x”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(22): error C2065: “y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(23): error C2065: “dir”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(24): error C2065: “visible”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(25): error C2065: “exist”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(26): error C2065: “sphere”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(27): error C2065: “pace”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(28): error C2065: “range”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(29): error C2065: “mile”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(30): warning C4508: “Bullet”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(33): error C2510: “Bullet”:“::”的左边必须是类/结构/联合
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(35): error C2065: “visible”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(37): error C3861: “setlinecolor”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(38): error C2065: “x”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(38): error C2065: “y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(38): error C3861: “circle”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(39): error C2065: “YELLOW”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(39): error C3861: “setfillcolor”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(40): error C2065: “x”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(40): error C2065: “y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(40): error C3861: “fillcircle”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(44): error C2510: “Bullet”:“::”的左边必须是类/结构/联合
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(46): error C2065: “mile”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.cpp(46): error C2065: “range”: 未声明的标识符
+  Drone.cpp
+  Fire.cpp
+  Group.cpp
+  Map.cpp
+  MiniGun.cpp
+  Missle.cpp
+  Object.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(4): error C2653: “Object”: 不是类或命名空间名称
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(6): error C2065: “x”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(6): error C2065: “pace”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(6): error C2065: “dir”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(6): error C2065: “PI”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(6): error C3861: “cos”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(7): error C2065: “y”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(7): error C2065: “pace”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(7): error C2065: “dir”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(7): error C2065: “PI”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(7): error C3861: “sin”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(8): error C2065: “mile”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\object.cpp(8): error C2065: “pace”: 未声明的标识符
+  RandomP.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(6): error C2653: “RandomP”: 不是类或命名空间名称
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(8): error C2270: “poisson”: 非成员函数上不允许修饰符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(11): error C3861: “uniform”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(15): error C3861: “fac”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(16): error C3861: “exp”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(16): error C3861: “pow”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(25): error C2653: “RandomP”: 不是类或命名空间名称
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(26): error C2270: “uniform”: 非成员函数上不允许修饰符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(27): error C2065: “LARGE_INTEGER”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(27): error C2146: 语法错误: 缺少“;”(在标识符“nFrequency”的前面)
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(27): error C2065: “nFrequency”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(28): error C2039: “QueryPerformanceFrequency”: 不是“`global namespace'”的成员
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(28): error C2065: “nFrequency”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(28): error C3861: “QueryPerformanceFrequency”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(30): error C2065: “LARGE_INTEGER”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(30): error C2146: 语法错误: 缺少“;”(在标识符“nStartCounter”的前面)
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(30): error C2065: “nStartCounter”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(31): error C2039: “QueryPerformanceCounter”: 不是“`global namespace'”的成员
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(31): error C2065: “nStartCounter”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(31): error C3861: “QueryPerformanceCounter”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): error C2039: “default_random_engine”: 不是“std”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\predefined c++ types (compiler internal)(254): note: 参见“std”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): error C2065: “default_random_engine”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): error C2146: 语法错误: 缺少“;”(在标识符“random”的前面)
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): error C2065: “nStartCounter”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): error C2228: “.LowPart”的左边必须有类/结构/联合
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): note: 类型是“unknown-type”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(32): error C3861: “random”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(33): error C2039: “uniform_real_distribution”: 不是“std”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\predefined c++ types (compiler internal)(254): note: 参见“std”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(33): error C2065: “uniform_real_distribution”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(33): error C2062: 意外的类型“double”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(34): error C2065: “random”: 未声明的标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(34): error C3861: “dis2”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(38): error C2653: “RandomP”: 不是类或命名空间名称
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(39): error C2270: “fac”: 非成员函数上不允许修饰符
+  Tank.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\tank.cpp(4): error C2653: “Tank”: 不是类或命名空间名称
+  UserInterface.cpp
+  Weapon.cpp
+  正在生成代码...

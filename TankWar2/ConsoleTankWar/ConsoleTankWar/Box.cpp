@@ -1,6 +1,6 @@
 #include "Box.h"
 #include "RandomP.h"
-
+#include "stdafx.h"
 
 Box::Box()
 {
@@ -34,6 +34,7 @@ Box::Box()
 	dir = 0;
 	sphere = 0;
 	EX = E.poisson(0.1);
+	pace = 0;
 	if (EX == 0) exist = false;
 	else exist = true;
 	visible = true;
@@ -42,3 +43,4 @@ Box::Box()
 Box::~Box()
 {
 }
+

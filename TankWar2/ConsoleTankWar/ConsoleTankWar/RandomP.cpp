@@ -1,4 +1,5 @@
 #include "RandomP.h"
+#include "stdafx.h"
 
 using namespace std;
 

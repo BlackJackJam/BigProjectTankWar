@@ -21,17 +21,20 @@ public:
 	Tank(int px, int py, double rdir, SIDE si);
 	~Tank();
 	void display();
+	void reload();
+	bool checkload(WEAPONTYPE w);
+	bool checkrange() { return true; };
 protected:
 	SIDE side;
 	CONTROL con;
+	const int Maxhealth = 1000;
 	int health;
 	WEAPONTYPE CurrentWeapon;
-	Bullet B;
-	MiniGun MG;
-	Drone D;
-	Missle MS;
-	Weapon *W;
-	Object *O;
+	int Bload;
+	bool BLOAD;
+	int Fload;
+	int Dload;
+	int Mload;
 };
 
 #endif // !__TANK_H__

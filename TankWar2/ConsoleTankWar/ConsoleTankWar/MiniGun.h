@@ -13,9 +13,7 @@ class MiniGun :public Object, public Weapon
 public:
 	MiniGun();
 	~MiniGun();
-	bool checkload(){ return true; };
 	void display();
-	void launch();
 protected:
 
 };

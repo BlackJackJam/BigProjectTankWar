@@ -13,8 +13,6 @@ class Weapon
 public:
 	Weapon();
 	virtual ~Weapon();
-	virtual bool checkload()=0; 
-	virtual void launch() = 0;
 protected:
 	int power;
 };

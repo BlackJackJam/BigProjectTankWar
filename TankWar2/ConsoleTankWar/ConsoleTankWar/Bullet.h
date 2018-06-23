@@ -4,6 +4,7 @@
 
 #include "Weapon.h"
 #include "Object.h"
+#include <cmath>;
 
 
 using namespace std;
@@ -13,14 +14,11 @@ class Bullet :public Weapon,public Object
 {
 public:
 	Bullet();
+	Bullet(int px, int py, double dr);
 	~Bullet();
 	void display();
-	bool checkload();
-	void reload();
-	void launch();
+	bool checkrange();
 protected:
-	int Maxload = 5;
-	static int load;
 };
 
 #endif // !__BULLET_H__
