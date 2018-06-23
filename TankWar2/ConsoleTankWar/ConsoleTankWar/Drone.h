@@ -5,15 +5,17 @@
 #include "Object.h"
 #include "Weapon.h"
 
+
 class Drone :public Object, public Weapon
 {
 public:
 	Drone();
 	~Drone();
 	bool checkload();
-	virtual void display();
-
-
+	void display();
+	void launch();
+protected:
+	static int load;
 };
 
 #endif // !__DRONE_H__

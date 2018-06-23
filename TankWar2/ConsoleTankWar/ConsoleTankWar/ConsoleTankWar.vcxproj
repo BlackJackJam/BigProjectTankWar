@@ -150,8 +150,11 @@
     <ClInclude Include="Box.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Drone.h" />
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="Fire.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="MiniGun.h" />
+    <ClInclude Include="Missle.h" />
     <ClInclude Include="RandomP.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -160,14 +163,18 @@
     <ClInclude Include="Object.h" />
     <ClInclude Include="UserInterface.h" />
     <ClInclude Include="Weapon.h" />
+    <ClInclude Include="Group.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="ConsoleTankWar.cpp" />
     <ClCompile Include="Drone.cpp" />
+    <ClCompile Include="Fire.cpp" />
+    <ClCompile Include="Group.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="MiniGun.cpp" />
+    <ClCompile Include="Missle.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="RandomP.cpp" />
     <ClCompile Include="stdafx.cpp">

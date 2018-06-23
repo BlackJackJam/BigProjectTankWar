@@ -5,6 +5,7 @@
 #include "Object.h"
 #include "Weapon.h"
 
+
 using namespace std;
 
 class MiniGun :public Object, public Weapon
@@ -12,8 +13,10 @@ class MiniGun :public Object, public Weapon
 public:
 	MiniGun();
 	~MiniGun();
-	bool checkload() { return true; }
-	virtual void display();
+	bool checkload(){ return true; };
+	void display();
+	void launch();
+protected:
 
 };
 

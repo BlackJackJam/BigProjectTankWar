@@ -2,6 +2,7 @@
 #ifndef __WEAPON_H__
 #define __WEAPON_H__
 
+#include "Environment.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ public:
 	Weapon();
 	virtual ~Weapon();
 	virtual bool checkload()=0; 
+	virtual void launch() = 0;
 protected:
 	int power;
 };

@@ -54,6 +54,18 @@
     <ClInclude Include="Drone.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Environment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Missle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Group.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -90,6 +102,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Drone.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Missle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Group.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

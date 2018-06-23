@@ -5,12 +5,13 @@
 #include "Object.h"
 #include "Weapon.h"
 
+
 class Box :public Object
 {
 public:
 	Box();
 	~Box();
-	virtual void display();
+	void display();
 protected:
 	WEAPONTYPE tpp;
 };

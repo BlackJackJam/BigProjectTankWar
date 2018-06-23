@@ -3,6 +3,7 @@
 #define __OBJECT_H__
 
 #include <graphics.h>
+#include "Environment.h"
 
 using namespace std;
 
@@ -11,7 +12,7 @@ class Object
 public:
 	Object();
 	virtual ~Object();
-	virtual void display();
+	virtual void display()=0;
 	int ShowPosX();
 	int ShowPosY();
 	double ShowDir();

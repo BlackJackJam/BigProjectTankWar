@@ -7,12 +7,16 @@
 #include "Box.h"
 #include "Bullet.h"
 #include <deque>
+#include "Environment.h"
+#include "Group.h"
 
 using namespace std;
 
 class Map
 {
 	
+protected:
+
 };
 
 #endif // !__MAP_H__
