@@ -20,7 +20,10 @@ using namespace std;
 class Map
 {
 public:
+	Map();//生成地图空间
 	template<typename T> deque<T> showdeque(deque<T> X);
+	void MapRefresh();//地图刷新
+	void DetectEvent();//事件检测
 protected:
 	deque<Tank> Etank;
 	deque<Tank> Ftank;
@@ -30,6 +33,13 @@ protected:
 	deque<Missle> M;
 	deque<Fire> F;
 	deque<Drone> D;
+	Tank UserTank;
 };
 
 #endif // !__MAP_H__
+
+template<typename T>
+inline deque<T> Map::showdeque(deque<T> X)
+{
+	return X;
+}

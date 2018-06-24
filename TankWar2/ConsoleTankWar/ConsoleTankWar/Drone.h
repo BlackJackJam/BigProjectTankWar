@@ -13,6 +13,7 @@ public:
 	Drone(int px, int py, double dr);
 	~Drone();
 	void display();
+	bool checkrange();
 protected:
 };
 

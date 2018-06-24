@@ -45,3 +45,44 @@ void Missle::display()
 		fillcircle(x, y, 1);
 	}
 }
+
+bool Missle::checkrange()
+{
+	if (mile == range) return false;
+	else return true;
+}
+
+void Missle::gettarget(deque<Tank> TX)
+{
+	double distance;
+	deque<Tank>::iterator it;
+	it = TX.begin();
+	distance = TargetDistance(*it);
+	targetnumber = it->shownumber();
+	for (it = TX.begin(); it != TX.end(); it++)
+	{
+		double distance2;
+		distance2 = TargetDistance(*it);
+		if (distance > distance2) targetnumber = it->shownumber();
+	}
+}
+
+double Missle::TargetDistance(Tank C)
+{
+	double distance;
+	distance = sqrt((C.ShowPosX() - x)*(C.ShowPosX() - x) + (C.ShowPosY ()- y)*(C.ShowPosY ()- y));
+	return distance;
+}
+
+void Missle::setdir(deque<Tank> TX)
+{
+	int tX, tY;
+	deque<Tank>::iterator itt;
+	for (itt = TX.begin(); itt != TX.end(); itt++)
+	{
+		if (itt->shownumber()==targetnumber)
+		{
+			dir=
+		}
+	}
+}

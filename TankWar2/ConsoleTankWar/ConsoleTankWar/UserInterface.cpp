@@ -3,5 +3,5 @@
 
 void UI::Initgraph()
 {
-	initgraph(WIDTH + 60, HEIGHT);
+	initgraph(WIDTH , HEIGHT);
 }

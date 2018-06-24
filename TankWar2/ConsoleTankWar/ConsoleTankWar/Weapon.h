@@ -7,6 +7,7 @@
 using namespace std;
 
 enum WEAPONTYPE {BULLET, MINIGUN, DRONE, MISSLE, FIRE};
+enum WSIDE {FW,EW};
 
 class Weapon
 {
@@ -15,6 +16,7 @@ public:
 	virtual ~Weapon();
 protected:
 	int power;
+	WSIDE ws;//ÎäÆ÷ÕóÓª±ê¼Ç
 };
 
 #endif // !__WEAPON_H__

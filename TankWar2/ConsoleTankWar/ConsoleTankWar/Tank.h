@@ -8,6 +8,7 @@
 #include "MiniGun.h"
 #include "Missle.h"
 #include "Drone.h"
+#include "RandomP.h"
 
 using namespace std;
 
@@ -18,14 +19,17 @@ class Tank:public Object
 {
 public:
 	Tank();
-	Tank(int px, int py, double rdir, SIDE si);
+	Tank(int px, int py, double rdir, SIDE si,CONTROL co);
+	Tank(SIDE si, CONTROL co);
 	~Tank();
+	void SetTank(SIDE si, CONTROL co);
 	void display();
 	void reload(int cload);
 	bool checkload(WEAPONTYPE w);
 	int getloadstatus(WEAPONTYPE ww);
 	bool checkrange() { return true; };
 	int counthealth(int power);
+	int shownumber();
 protected:
 	SIDE side;
 	CONTROL con;
@@ -37,6 +41,8 @@ protected:
 	int Dload;
 	int Mload;
 	bool BL;
+	int number;
+	static int N;
 };
 
 #endif // !__TANK_H__

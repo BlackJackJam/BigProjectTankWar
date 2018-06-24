@@ -29,6 +29,10 @@ Bullet::Bullet(int px, int py, double dr)
 	mile = 0;
 }
 
+Bullet::~Bullet()
+{
+}
+
 
 void Bullet::display()
 {

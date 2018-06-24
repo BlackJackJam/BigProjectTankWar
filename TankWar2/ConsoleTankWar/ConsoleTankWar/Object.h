@@ -17,7 +17,7 @@ public:
 	int ShowPosX();
 	int ShowPosY();
 	double ShowDir();
-	void move();
+	void moveO();
 	virtual bool checkrange() = 0;
 protected:
 	int x;

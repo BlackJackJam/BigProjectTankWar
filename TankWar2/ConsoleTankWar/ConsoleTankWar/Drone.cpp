@@ -35,3 +35,8 @@ void Drone::display()
 		circle(x, y, 8);
 	}
 }
+
+bool Drone::checkrange()
+{
+	return true;
+}
