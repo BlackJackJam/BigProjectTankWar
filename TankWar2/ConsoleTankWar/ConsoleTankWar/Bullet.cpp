@@ -24,7 +24,7 @@ Bullet::Bullet(int px, int py, double dr)
 	visible = true;
 	exist = true;
 	sphere = 1;
-	pace = 0;
+	pace = 3;
 	range = 30;
 	mile = 0;
 }

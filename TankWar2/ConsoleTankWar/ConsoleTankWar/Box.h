@@ -12,6 +12,7 @@ public:
 	Box();
 	~Box();
 	void display();
+	WEAPONTYPE show();
 protected:
 	WEAPONTYPE tpp;
 };

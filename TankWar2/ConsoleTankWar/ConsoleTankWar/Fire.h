@@ -9,6 +9,7 @@ class Fire :public Object, public Weapon
 {
 public:
 	Fire();
+	Fire(int px, int py, double dr);
 	~Fire();
 	void display();
 protected:

@@ -8,7 +8,7 @@ Box::Box()
 	int px, py, wt, EX;
 	px = (int)X.uniform() * WIDTH;
 	py = (int)Y.uniform() * HEIGHT;
-	wt = (int)B.uniform() * 4;
+	wt = (int)B.uniform() * 8;
 	switch (wt)
 	{
 	case 0:
@@ -24,6 +24,18 @@ Box::Box()
 		tpp = FIRE;
 		break;
 	case 4:
+		tpp = FIRE;
+		break;
+	case 5:
+		tpp = FIRE;
+		break;
+	case 6:
+		tpp = FIRE;
+		break;
+	case 7:
+		tpp = MISSLE;
+		break;
+	case 8:
 		tpp = FIRE;
 		break;
 	default:
@@ -42,5 +54,17 @@ Box::Box()
 
 Box::~Box()
 {
+}
+
+void Box::display()
+{
+	rectangle(x - 1, y - 1, x + 1, y + 1);
+	setfillcolor(RED);
+	fillrectangle(x - 1, y - 1, x + 1, y + 1);
+}
+
+WEAPONTYPE Box::show()
+{
+	return tpp;
 }
 

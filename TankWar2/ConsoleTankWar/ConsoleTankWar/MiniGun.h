@@ -12,6 +12,7 @@ class MiniGun :public Object, public Weapon
 {
 public:
 	MiniGun();
+	MiniGun(int px, int py, double dr);
 	~MiniGun();
 	void display();
 protected:

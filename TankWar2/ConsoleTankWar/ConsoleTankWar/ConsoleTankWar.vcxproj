@@ -185,7 +185,6 @@
     </ClCompile>
     <ClCompile Include="Tank.cpp" />
     <ClCompile Include="UserInterface.cpp" />
-    <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ConsoleTankWar.rc" />

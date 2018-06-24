@@ -92,9 +92,6 @@
     <ClCompile Include="Box.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Weapon.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="MiniGun.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

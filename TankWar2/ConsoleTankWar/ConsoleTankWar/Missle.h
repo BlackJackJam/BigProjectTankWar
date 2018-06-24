@@ -9,6 +9,7 @@ class Missle :public Object, public Weapon
 {
 public:
 	Missle();
+	Missle(int px, int py,double dr);
 	~Missle();
 	void display();
 protected:

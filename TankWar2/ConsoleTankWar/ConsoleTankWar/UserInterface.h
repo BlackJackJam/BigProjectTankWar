@@ -6,5 +6,10 @@
 #include <graphics.h>
 #include "Environment.h"
 
+class UI
+{
+public:
+	void Initgraph();
 
+};
 #endif // !__USERINTERFACE_H__

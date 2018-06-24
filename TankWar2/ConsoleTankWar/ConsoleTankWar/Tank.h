@@ -21,9 +21,11 @@ public:
 	Tank(int px, int py, double rdir, SIDE si);
 	~Tank();
 	void display();
-	void reload();
+	void reload(int cload);
 	bool checkload(WEAPONTYPE w);
+	int getloadstatus(WEAPONTYPE ww);
 	bool checkrange() { return true; };
+	int counthealth(int power);
 protected:
 	SIDE side;
 	CONTROL con;
@@ -31,10 +33,10 @@ protected:
 	int health;
 	WEAPONTYPE CurrentWeapon;
 	int Bload;
-	bool BLOAD;
 	int Fload;
 	int Dload;
 	int Mload;
+	bool BL;
 };
 
 #endif // !__TANK_H__

@@ -10,6 +10,7 @@ class Drone :public Object, public Weapon
 {
 public:
 	Drone();
+	Drone(int px, int py, double dr);
 	~Drone();
 	void display();
 protected:
