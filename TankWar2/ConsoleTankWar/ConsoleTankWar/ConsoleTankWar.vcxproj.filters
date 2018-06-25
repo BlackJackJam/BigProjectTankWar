@@ -104,10 +104,10 @@
     <ClCompile Include="Missle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Group.cpp">
+    <ClCompile Include="Fire.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Fire.cpp">
+    <ClCompile Include="Group.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

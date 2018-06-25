@@ -24,6 +24,7 @@ public:
 	~Tank();
 	void SetTank(SIDE si, CONTROL co);
 	void display();
+	void setdir(double dr);
 	void reload(int cload);
 	bool checkload(WEAPONTYPE w);
 	int getloadstatus(WEAPONTYPE ww);

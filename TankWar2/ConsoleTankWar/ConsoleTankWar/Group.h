@@ -15,14 +15,14 @@ public:
 	TankGroup();
 	void GetFriendDeque(deque<Tank> &TA);
 	void GetEnemyDeque(deque<Tank> &TA);
-	void OutPutDeque();
+	void tankoperate(deque<Tank>&TA);
 protected:
 	int avrX;
 	int avrY;
+	int avrR;
 	int EavrX;
 	int EavrY;
-	deque<Tank> taka;
-	deque<Tank> faka;
+	int EavrR;
 };
 
 #endif // !__TANK_H__

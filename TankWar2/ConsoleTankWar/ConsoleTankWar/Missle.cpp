@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Missle.h"
+#include <cmath>
 
 Missle::Missle()
 {
@@ -82,7 +83,10 @@ void Missle::setdir(deque<Tank> TX)
 	{
 		if (itt->shownumber()==targetnumber)
 		{
-			dir=
+			tX = itt->ShowPosX();
+			tY = itt->ShowPosY();
+			dir = atan2((tX - x), (tY - y))*180/PI;
 		}
+		else dir = dir;
 	}
 }

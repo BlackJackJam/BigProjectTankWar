@@ -1,6 +1,7 @@
+#include "stdafx.h"
 #include "Box.h"
 #include "RandomP.h"
-#include "stdafx.h"
+
 
 Box::Box()
 {

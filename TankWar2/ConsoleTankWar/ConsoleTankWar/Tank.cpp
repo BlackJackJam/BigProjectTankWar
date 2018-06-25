@@ -1,5 +1,6 @@
-#include "Tank.h"
 #include "stdafx.h"
+#include "Tank.h"
+
 
 static int N = 0;
 
@@ -95,6 +96,16 @@ void Tank::display()
 	else if (side == Friend) setfillcolor(BROWN);
 	else setfillcolor(CYAN);
 	fillcircle(x, y, 5);
+	setlinecolor(BLUE);
+	rectangle(x - 5, y - 9, x + 5, y - 7);//ÑªÌõ
+	if (side == Friend) setfillcolor(GREEN);
+	else setfillcolor(RED);
+	fillrectangle(x - 5, y - 9, x - 5 + (int)(health / 100), y - 7);
+}
+
+void Tank::setdir(double dr)
+{
+	dir = dr;
 }
 
 void Tank::reload(int cload)
