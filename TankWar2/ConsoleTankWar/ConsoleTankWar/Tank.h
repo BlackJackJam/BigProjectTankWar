@@ -18,19 +18,21 @@ enum CONTROL {AI,USER};
 class Tank:public Object
 {
 public:
-	Tank();
-	Tank(int px, int py, double rdir, SIDE si,CONTROL co);
-	Tank(SIDE si, CONTROL co);
+	Tank();//构造函数
+	Tank(int px, int py, double rdir, SIDE si,CONTROL co);//初始化特定坦克
+	Tank(SIDE si, CONTROL co);//初始化随机位置特定阵营及操纵方式的坦克
 	~Tank();
-	void SetTank(SIDE si, CONTROL co);
-	void display();
-	void setdir(double dr);
-	void reload(int cload);
-	bool checkload(WEAPONTYPE w);
-	int getloadstatus(WEAPONTYPE ww);
-	bool checkrange() { return true; };
-	int counthealth(int power);
-	int shownumber();
+	void SetTank(SIDE si, CONTROL co);//设置坦克阵营及操纵模式
+	void display();//坦克显示
+	void setdir(double dr);//设置坦克行进方向
+	void reload(int cload);//重新装填
+	bool checkload(WEAPONTYPE w);//是否可以发射
+	int getloadstatus(WEAPONTYPE ww);//检测弹药量
+	bool checkrange() { return true; };//坦克没有运动距离限制
+	int counthealth(int power);//计算血量
+	int shownumber();//显示坦克编号
+	WEAPONTYPE usingWeapon();//使用某种类武器
+	double setDroneDir();//设置武器发射方向，仅限drone
 protected:
 	SIDE side;
 	CONTROL con;

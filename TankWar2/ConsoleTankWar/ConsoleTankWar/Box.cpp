@@ -2,6 +2,7 @@
 #include "Box.h"
 #include "RandomP.h"
 
+//随机补给系统
 
 Box::Box()
 {
