@@ -30,8 +30,9 @@ public:
 	int getloadstatus(WEAPONTYPE ww);//检测弹药量
 	bool checkrange() { return true; };//坦克没有运动距离限制
 	int counthealth(int power);//计算血量
+	int showhealth();
 	int shownumber();//显示坦克编号
-	WEAPONTYPE usingWeapon();//使用某种类武器
+	WEAPONTYPE usingWeapon();//使用何种类武器
 	double setDroneDir();//设置武器发射方向，仅限drone
 protected:
 	SIDE side;
@@ -47,6 +48,8 @@ protected:
 	int number;
 	static int N;
 };
+
+
 
 #endif // !__TANK_H__
 

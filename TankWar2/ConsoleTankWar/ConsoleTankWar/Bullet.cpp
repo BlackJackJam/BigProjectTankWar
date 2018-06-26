@@ -12,7 +12,7 @@ Bullet::Bullet()
 	exist = false;
 	sphere = 1;
 	pace = 0;
-	range = 30;
+	range = 90;
 	mile = 0;
 }
 
@@ -26,7 +26,7 @@ Bullet::Bullet(int px, int py, double dr)
 	exist = true;
 	sphere = 1;
 	pace = 3;
-	range = 30;
+	range = 90;
 	mile = 0;
 }
 

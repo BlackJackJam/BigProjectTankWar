@@ -167,9 +167,22 @@ int Tank::counthealth(int power)
 	return (health - power);
 }
 
+int Tank::showhealth()
+{
+	return health;
+}
+
 int Tank::shownumber()
 {
 	return number;
+}
+
+WEAPONTYPE Tank::usingWeapon()
+{
+	if (checkload(FIRE)) return FIRE;
+	else if (checkload(MISSLE)) return MISSLE;
+	else if 
+	return WEAPONTYPE();
 }
 
 

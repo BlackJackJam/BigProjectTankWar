@@ -10,5 +10,6 @@
 #define BGCOLOUR 0x282828
 #define FGCOLOUR 0xf4b007
 #define PI 3.14159265358979
+#define TN 6//一方阵营坦克数量
 
 #endif // !__ENVIRONMENT_H__

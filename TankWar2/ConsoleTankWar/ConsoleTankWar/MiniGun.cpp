@@ -11,7 +11,7 @@ MiniGun::MiniGun()
 	exist = false;
 	sphere = 2;
 	pace = 0;
-	range = 30;
+	range = 90;
 	mile = 0;
 
 }
@@ -26,7 +26,7 @@ MiniGun::MiniGun(int px, int py, double dr)
 	exist = true;
 	sphere = 2;
 	pace = 3;
-	range = 30;
+	range = 90;
 	mile = 0;
 }
 

@@ -3,6 +3,16 @@
 #include "RandomP.h"
 #include <cmath>
 
+TankGroup::TankGroup()
+{
+	avrR = 0;
+	avrY = 0;
+	avrX = 0;
+	EavrR = 0;
+	EavrX = 0;
+	EavrY = 0;
+}
+
 void TankGroup::GetFriendDeque(deque<Tank> &TA)
 {
 	int sumX = 0;
@@ -45,8 +55,10 @@ void TankGroup::GetEnemyDeque(deque<Tank>& TA)
 	EavrR = EavrR / TA.size();
 }
 
-void TankGroup::tankoperate(deque<Tank>& TA)
+void TankGroup::tankoperate(deque<Tank>& TA,deque<Tank>& TB,deque<Box> &B)
 {
+	GetFriendDeque(TA);
+	GetEnemyDeque(TB);
 	deque<Tank>::iterator tt;
 	if (EavrR > avrR)
 	{
@@ -86,4 +98,81 @@ void TankGroup::tankoperate(deque<Tank>& TA)
 			tt->setdir(d);
 		}
 	}
+	Scanenemy(TA, TB);
+	ScanBox(TA, B);
+}
+
+void TankGroup::Scanenemy(deque<Tank> &F, deque<Tank> &E)
+{
+	deque<Tank>::iterator fiter;
+	deque<Tank>::iterator eiter;
+	for (fiter = F.begin(); fiter != F.end(); fiter++)
+	{
+		double dd, cd;
+		int enemyNum;
+		bool fight = false;
+		RandomP hc;
+		int ex, ey;
+		dd = 151;
+		for (eiter = E.begin(); eiter != E.end(); eiter++)
+		{
+			cd = GMapDistance(fiter->ShowPosX(), fiter->ShowPosY(), eiter->ShowPosX(), eiter->ShowPosY());
+			if (cd < dd)
+			{
+				dd = cd;
+				ex = eiter->ShowPosX();
+				ey = eiter->ShowPosY();
+				if ((fiter->showhealth()) >(eiter->showhealth() + (int)hc.uniform() * 50 - 25)) fight = true;
+			}
+		}
+		if (cd < 151)
+		{
+			if (fight == true)
+			{
+				double drr;
+				drr = atan2((ex - fiter->ShowPosX()), (ey - fiter->ShowPosY())) * 180 / PI;
+				fiter->setdir(drr);
+			}
+			else
+			{
+				double drr;
+				drr = atan2((-ex + fiter->ShowPosX()), (-ey + fiter->ShowPosY())) * 180 / PI;
+				drr += hc.uniform() * 60 - 30;
+				fiter->setdir(drr);
+			}
+		}
+	}
+}
+
+void TankGroup::ScanBox(deque<Tank>& T, deque<Box>& B)
+{
+	deque<Tank>::iterator itt;
+	deque<Box>::iterator itb;
+	for (itt = T.begin(); itt != T.end(); itt++)
+	{
+		int db = 31;
+		int cdb;
+		int bx, by;
+		for (itb = B.begin(); itb != B.end(); itb++)
+		{
+			cdb = GMapDistance(itb->ShowPosX(), itb->ShowPosY(), itt->ShowPosX(), itt->ShowPosY());
+			if (cdb < db)
+			{
+				db = cdb;
+				bx = itb->ShowPosX();
+				by = itb->ShowPosY();
+			}
+			double dib;
+			dib = atan2(bx - itt->ShowPosX(), by - itt->ShowPosY());
+			itt->setdir(dib);
+		}
+	}
+
+}
+
+int TankGroup::GMapDistance(int px1, int py1, int px2, int py2)
+{
+	int D;
+	D = (int)sqrt((px1 - px2)*(px1 - px2) + (py1 - py2)*(py1 - py2));
+	return D;
 }

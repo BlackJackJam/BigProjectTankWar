@@ -21,9 +21,11 @@ class Map
 {
 public:
 	Map();//生成地图空间
-	template<typename T> deque<T> showdeque(deque<T> X);
+	//template<typename T> deque<T> showdeque(deque<T> X);
 	void MapRefresh();//地图刷新
-	void DetectEvent();//事件检测
+	int MapDistance(int px1, int py1, int px2, int py2);
+	void DetectNonATTEvent();//非攻击事件检测
+	friend class TankGroup;
 protected:
 	deque<Tank> Etank;
 	deque<Tank> Ftank;
@@ -38,8 +40,3 @@ protected:
 
 #endif // !__MAP_H__
 
-template<typename T>
-inline deque<T> Map::showdeque(deque<T> X)
-{
-	return X;
-}
