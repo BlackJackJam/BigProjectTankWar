@@ -71,7 +71,7 @@ void TankGroup::tankoperate(deque<Tank>& TA,deque<Tank>& TB,deque<Box> &B)
 			d1 = atan2((tx - avrX), (ty - avrY))*180/PI;
 			d2 = atan2((avrX - EavrX), (avrY - EavrY))*180/PI;
 			d = (d1 + d2) / 2;
-			tt->setdir(d);
+			if (tt->checkUser()==false) tt->setdir(d);
 		}
 	}
 	else if(EavrR<avrR)
@@ -85,7 +85,7 @@ void TankGroup::tankoperate(deque<Tank>& TA,deque<Tank>& TB,deque<Box> &B)
 			d1 = atan2((avrX - tx), (avrY - ty))*180/PI;
 			d2 = atan2((EavrX - avrX), (EavrY - avrY))*180/PI;
 			d = (d1 + d2) / 2;
-			tt->setdir(d);
+			if (tt->checkUser()==false) tt->setdir(d);
 		}
 	}
 	else
@@ -95,12 +95,13 @@ void TankGroup::tankoperate(deque<Tank>& TA,deque<Tank>& TB,deque<Box> &B)
 			double d;
 			RandomP rr;
 			d = (rr.uniform() - 0.5) * 360 / PI;
-			tt->setdir(d);
+			if (tt->checkUser()==false) tt->setdir(d);
 		}
 	}
-	Scanenemy(TA, TB);
 	ScanBox(TA, B);
-}
+	Scanenemy(TA, TB);
+	
+}//坦克行动优先级：攻击/逃跑>捡箱子>团队行动
 
 void TankGroup::Scanenemy(deque<Tank> &F, deque<Tank> &E)
 {
@@ -131,14 +132,14 @@ void TankGroup::Scanenemy(deque<Tank> &F, deque<Tank> &E)
 			{
 				double drr;
 				drr = atan2((ex - fiter->ShowPosX()), (ey - fiter->ShowPosY())) * 180 / PI;
-				fiter->setdir(drr);
+				if (fiter->checkUser() == false) fiter->setdir(drr);
 			}
 			else
 			{
 				double drr;
 				drr = atan2((-ex + fiter->ShowPosX()), (-ey + fiter->ShowPosY())) * 180 / PI;
 				drr += hc.uniform() * 60 - 30;
-				fiter->setdir(drr);
+				if (fiter->checkUser()==false) fiter->setdir(drr);
 			}
 		}
 	}
@@ -164,7 +165,7 @@ void TankGroup::ScanBox(deque<Tank>& T, deque<Box>& B)
 			}
 			double dib;
 			dib = atan2(bx - itt->ShowPosX(), by - itt->ShowPosY());
-			itt->setdir(dib);
+			if (itt->checkUser()==false) itt->setdir(dib);
 		}
 	}
 

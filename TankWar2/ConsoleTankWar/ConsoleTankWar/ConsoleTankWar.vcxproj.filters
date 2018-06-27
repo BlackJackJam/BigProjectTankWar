@@ -66,6 +66,9 @@
     <ClInclude Include="Fire.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Boom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -108,6 +111,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Group.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Boom.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

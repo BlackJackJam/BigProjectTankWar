@@ -108,9 +108,25 @@ void Tank::setdir(double dr)
 	dir = dr;
 }
 
-void Tank::reload(int cload)
+void Tank::reload(WEAPONTYPE TX)
 {
-	cload++;
+	switch (TX)
+	{
+	case DRONE:
+		Dload++;
+		break;
+	case MISSLE:
+		Mload++;
+		break;
+	case FIRE:
+		Fload++;
+		break;
+	case 0:
+		Bload++;
+		break;
+	default:
+		break;
+	}
 }
 
 bool Tank::checkload(WEAPONTYPE w)
@@ -122,7 +138,7 @@ bool Tank::checkload(WEAPONTYPE w)
 		if (w == BULLET)
 		{
 			BL = false;
-			reload(Bload);
+			reload(BULLET);
 		}
 		return false;
 	}
@@ -130,7 +146,7 @@ bool Tank::checkload(WEAPONTYPE w)
 	{
 		if (BL == false)
 		{ 
-			reload(Bload);
+			reload(BULLET);
 			if (Bload == 5) BL = true;
 			return false;
 		}
@@ -177,12 +193,14 @@ int Tank::shownumber()
 	return number;
 }
 
+bool Tank::checkUser()
+{
+	if (con == USER) return true;
+	else return false;
+}
+
 WEAPONTYPE Tank::usingWeapon()
 {
-	if (checkload(FIRE)) return FIRE;
-	else if (checkload(MISSLE)) return MISSLE;
-	else if 
-	return WEAPONTYPE();
 }
 
 

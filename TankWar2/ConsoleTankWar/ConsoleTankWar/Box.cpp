@@ -8,8 +8,8 @@ Box::Box()
 {
 	RandomP B, X, Y, E;
 	int px, py, wt, EX;
-	px = (int)X.uniform() * WIDTH;
-	py = (int)Y.uniform() * HEIGHT;
+	px = (int)X.uniform() * (WIDTH-4)+2;
+	py = (int)Y.uniform() * (HEIGHT-4)+2;
 	wt = (int)B.uniform() * 8;
 	switch (wt)
 	{
@@ -61,8 +61,10 @@ Box::~Box()
 void Box::display()
 {
 	rectangle(x - 1, y - 1, x + 1, y + 1);
+	setfillstyle(8);
 	setfillcolor(RED);
 	fillrectangle(x - 1, y - 1, x + 1, y + 1);
+	setfillstyle(1);
 }
 
 WEAPONTYPE Box::show()

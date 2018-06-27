@@ -3,5 +3,6 @@
 
 void UI::Initgraph()
 {
-	initgraph(WIDTH , HEIGHT);
+	initgraph(WIDTH + 240, HEIGHT);
+	setbkcolor(BGCOLOUR);
 }

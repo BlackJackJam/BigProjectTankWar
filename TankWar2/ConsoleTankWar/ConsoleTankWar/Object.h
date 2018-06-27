@@ -19,6 +19,7 @@ public:
 	double ShowDir();
 	void moveO();
 	virtual bool checkrange() = 0;
+	int countsphere() { return sphere; };
 protected:
 	int x;
 	int y;

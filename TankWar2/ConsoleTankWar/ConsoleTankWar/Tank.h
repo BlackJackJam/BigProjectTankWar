@@ -25,13 +25,14 @@ public:
 	void SetTank(SIDE si, CONTROL co);//设置坦克阵营及操纵模式
 	void display();//坦克显示
 	void setdir(double dr);//设置坦克行进方向
-	void reload(int cload);//重新装填
+	void reload(WEAPONTYPE TX);//重新装填
 	bool checkload(WEAPONTYPE w);//是否可以发射
 	int getloadstatus(WEAPONTYPE ww);//检测弹药量
 	bool checkrange() { return true; };//坦克没有运动距离限制
 	int counthealth(int power);//计算血量
 	int showhealth();
 	int shownumber();//显示坦克编号
+	bool checkUser();//检查坦克是否由用户控制
 	WEAPONTYPE usingWeapon();//使用何种类武器
 	double setDroneDir();//设置武器发射方向，仅限drone
 protected:
