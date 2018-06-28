@@ -16,6 +16,7 @@ public:
 	virtual ~Weapon();
 	void SetWS(WSIDE k) { ws = k; };
 	WSIDE getWS() { return ws; };
+	int showpower() { return power; };
 protected:
 	int power;
 	WSIDE ws;//ÎäÆ÷ÕóÓª±ê¼Ç

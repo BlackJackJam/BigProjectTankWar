@@ -114,11 +114,11 @@ void TankGroup::Scanenemy(deque<Tank> &F, deque<Tank> &E)
 		bool fight = false;
 		RandomP hc;
 		int ex, ey;
-		dd = 151;
+		dd = 150;
 		for (eiter = E.begin(); eiter != E.end(); eiter++)
 		{
 			cd = GMapDistance(fiter->ShowPosX(), fiter->ShowPosY(), eiter->ShowPosX(), eiter->ShowPosY());
-			if (cd < dd)
+			if (cd <= dd)
 			{
 				dd = cd;
 				ex = eiter->ShowPosX();
@@ -126,7 +126,7 @@ void TankGroup::Scanenemy(deque<Tank> &F, deque<Tank> &E)
 				if ((fiter->showhealth()) >(eiter->showhealth() + (int)hc.uniform() * 50 - 25)) fight = true;
 			}
 		}
-		if (cd < 151)
+		if (cd <= 150)
 		{
 			if (fight == true)
 			{
@@ -151,13 +151,13 @@ void TankGroup::ScanBox(deque<Tank>& T, deque<Box>& B)
 	deque<Box>::iterator itb;
 	for (itt = T.begin(); itt != T.end(); itt++)
 	{
-		int db = 31;
-		int cdb;
+		double db = 30;
+		double cdb;
 		int bx, by;
 		for (itb = B.begin(); itb != B.end(); itb++)
 		{
 			cdb = GMapDistance(itb->ShowPosX(), itb->ShowPosY(), itt->ShowPosX(), itt->ShowPosY());
-			if (cdb < db)
+			if (cdb <= db)
 			{
 				db = cdb;
 				bx = itb->ShowPosX();
@@ -171,9 +171,9 @@ void TankGroup::ScanBox(deque<Tank>& T, deque<Box>& B)
 
 }
 
-int TankGroup::GMapDistance(int px1, int py1, int px2, int py2)
+double TankGroup::GMapDistance(int px1, int py1, int px2, int py2)
 {
-	int D;
-	D = (int)sqrt((px1 - px2)*(px1 - px2) + (py1 - py2)*(py1 - py2));
+	double D;
+	D = sqrt((px1 - px2)*(px1 - px2) + (py1 - py2)*(py1 - py2));
 	return D;
 }

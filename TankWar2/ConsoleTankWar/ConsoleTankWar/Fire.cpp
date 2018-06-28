@@ -34,6 +34,12 @@ Fire::~Fire()
 
 }
 
+bool Fire::checkrange()
+{
+	if (mile>=range) return false;
+	else return true;
+}
+
 void Fire::display()
 {
 	if (visible)

@@ -11,6 +11,7 @@ public:
 	Fire();
 	Fire(int px, int py, double dr);
 	~Fire();
+	bool checkrange();
 	void display();
 protected:
 };

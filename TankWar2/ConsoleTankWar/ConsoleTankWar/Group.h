@@ -19,7 +19,7 @@ public:
 	void tankoperate(deque<Tank>&TA,deque<Tank> &TB,deque<Box> &B);
 	void Scanenemy(deque<Tank> &F, deque<Tank> &E);
 	void ScanBox(deque<Tank> &T, deque<Box> &B);
-	int GMapDistance(int px1, int py1, int px2, int py2);
+	double GMapDistance(int px1, int py1, int px2, int py2);
 protected:
 	int avrX;
 	int avrY;

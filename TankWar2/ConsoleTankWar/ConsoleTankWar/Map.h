@@ -24,7 +24,7 @@ public:
 	Map();//生成地图空间
 	//template<typename T> deque<T> showdeque(deque<T> X);
 	void MapRefresh();//地图刷新（结算等级：击毁（包括炮弹到达边界或射程）>行动>攻击）
-	int MapDistance(int px1, int py1, int px2, int py2);
+	double MapDistance(int px1, int py1, int px2, int py2);
 	void DetectNonATTEvent();//非攻击事件检测
 	void DetectATTEvent();//攻击事件检测
 	friend class TankGroup;

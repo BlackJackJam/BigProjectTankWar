@@ -96,7 +96,7 @@ void Tank::display()
 	else if (side == Friend) setfillcolor(BROWN);
 	else setfillcolor(CYAN);
 	fillcircle(x, y, 5);
-	setlinecolor(BLUE);
+	setlinecolor(WHITE);
 	rectangle(x - 5, y - 9, x + 5, y - 7);//ÑªÌõ
 	if (side == Friend) setfillcolor(GREEN);
 	else setfillcolor(RED);

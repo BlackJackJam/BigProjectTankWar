@@ -14,6 +14,7 @@ public:
 	MiniGun();
 	MiniGun(int px, int py, double dr);
 	~MiniGun();
+	bool checkrange();
 	void display();
 protected:
 

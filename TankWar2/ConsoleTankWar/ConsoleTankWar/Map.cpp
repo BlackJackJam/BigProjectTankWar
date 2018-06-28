@@ -20,10 +20,10 @@ Map::Map()
 	Ftank.push_back(UserTank);
 }
 
-int Map::MapDistance(int px1, int py1, int px2, int py2)
+double Map::MapDistance(int px1, int py1, int px2, int py2)
 {
-	int D;
-	D = (int)sqrt((px1 - px2)*(px1 - px2) + (py1 - py2)*(py1 - py2));
+	double D;
+	D = sqrt((px1 - px2)*(px1 - px2) + (py1 - py2)*(py1 - py2));
 	return D;
 }
 
@@ -41,7 +41,7 @@ void Map::DetectNonATTEvent()//¼ì²â·Ç¹¥»÷ÊÂ¼þ£¬¾ßÌå¶øÑÔÎªÓëÎäÆ÷²Ù×÷ÎÞ¹ØµÄÌ¹¿ËÅö×
 		{
 			for (eit = Etank.begin(); eit != Etank.end(); eit++)
 			{
-				int DD;
+				double DD;
 				double drx;
 				int fx, fy, ex, ey;
 				fx = fit->ShowPosX();
@@ -50,7 +50,7 @@ void Map::DetectNonATTEvent()//¼ì²â·Ç¹¥»÷ÊÂ¼þ£¬¾ßÌå¶øÑÔÎªÓëÎäÆ÷²Ù×÷ÎÞ¹ØµÄÌ¹¿ËÅö×
 				ey = eit->ShowPosY();
 				DD = MapDistance(fit->ShowPosX(), fit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY());
 				drx = atan2((fx - ex), (fy - ey)) * 180 / PI;
-				if (DD <= eit->countsphere() + fit->countsphere())
+				if (DD <=(double) eit->countsphere() + fit->countsphere())
 				{
 					eit->setdir(-drx + 10 - 20 * DX.uniform());
 					fit->setdir(drx + 10 - 20 * DX.uniform());
@@ -103,13 +103,14 @@ void Map::DetectNonATTEvent()//¼ì²â·Ç¹¥»÷ÊÂ¼þ£¬¾ßÌå¶øÑÔÎªÓëÎäÆ÷²Ù×÷ÎÞ¹ØµÄÌ¹¿ËÅö×
 	{
 		for (bit = B.begin(); bit != B.end(); bit++)
 		{
-			int tx, ty, bx, by, dbt;
+			int tx, ty, bx, by;
+			double dbt;
 			tx = fit->ShowPosX();
 			ty = fit->ShowPosY();
 			bx = bit->ShowPosX();
 			by = bit->ShowPosY();
 			dbt = MapDistance(tx, ty, bx, by);
-			if (dbt <= bit->countsphere() + fit->countsphere())
+			if (dbt <= (double)bit->countsphere() + fit->countsphere())
 			{
 				WEAPONTYPE tp;
 				tp = bit->show();
@@ -121,13 +122,14 @@ void Map::DetectNonATTEvent()//¼ì²â·Ç¹¥»÷ÊÂ¼þ£¬¾ßÌå¶øÑÔÎªÓëÎäÆ÷²Ù×÷ÎÞ¹ØµÄÌ¹¿ËÅö×
 	{
 		for (bit = B.begin(); bit != B.end(); bit++)
 		{
-			int tx, ty, bx, by, dbt;
+			int tx, ty, bx, by;
+			double dbt;
 			tx = eit->ShowPosX();
 			ty = eit->ShowPosY();
 			bx = bit->ShowPosX();
 			by = bit->ShowPosY();
 			dbt = MapDistance(tx, ty, bx, by);
-			if (dbt <= bit->countsphere() + eit->countsphere())
+			if (dbt <= (double)bit->countsphere() + eit->countsphere())
 			{
 				WEAPONTYPE tp;
 				tp = bit->show();
@@ -144,8 +146,176 @@ void Map::DetectATTEvent()
 	deque<Missle>::iterator msit;
 	deque<Fire>::iterator frit;
 	deque<Drone>::iterator dit;
+	deque<Tank>::iterator fit;
+	deque<Tank>::iterator eit;
 	for (buit = Bu.begin(); buit != Bu.end(); buit++)
 	{
-		if
+		if (buit->ShowPosX() <= 0 || buit->ShowPosY() <= 0 || buit->ShowPosX() >= WIDTH || buit->ShowPosY() >= HEIGHT)
+		{
+			BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
+		}
+		else if (buit->checkrange() == false)
+		{
+			BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
+		}
+		else
+		{
+			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+			{
+				double dfb;
+				dfb = MapDistance(buit->ShowPosX(), buit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
+				if ((buit->getWS() == EW)&&(dfb<=(double)buit->countsphere()+fit->countsphere()))
+				{
+					BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
+					fit->counthealth(buit->showpower);
+				}
+			}
+			for (eit = Etank.begin(); eit != Etank.end(); eit++)
+			{
+				double deb;
+				deb = MapDistance(buit->ShowPosX(), buit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY);
+				if ((buit->getWS() == FW) && (deb <= (double)buit->countsphere() + eit->countsphere()))
+				{
+					BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
+					eit->counthealth(buit->showpower);
+				}
+			}
+		}
+	}
+	for (mgit = Mg.begin(); mgit != Mg.end(); mgit++)
+	{
+		if (mgit->ShowPosX() <= 0 || mgit->ShowPosY() <= 0 || mgit->ShowPosX() >= WIDTH || mgit->ShowPosY() >= HEIGHT)
+		{
+			BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
+		}
+		else if (mgit->checkrange() == false)
+		{
+			BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
+		}
+		else
+		{
+			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+			{
+				double dfb;
+				dfb = MapDistance(mgit->ShowPosX(), mgit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
+				if ((mgit->getWS() == EW) && (dfb <= (double)mgit->countsphere() + fit->countsphere()))
+				{
+					BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
+					fit->counthealth(mgit->showpower);
+				}
+			}
+			for (eit = Etank.begin(); eit != Etank.end(); eit++)
+			{
+				double deb;
+				deb = MapDistance(mgit->ShowPosX(), mgit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY);
+				if ((mgit->getWS() == FW) && (deb <= (double)mgit->countsphere() + eit->countsphere()))
+				{
+					BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
+					eit->counthealth(mgit->showpower);
+				}
+			}
+		}
+	}
+	for (frit = F.begin(); frit != F.end(); frit++)
+	{
+		if (frit->ShowPosX() <= 0 || frit->ShowPosY() <= 0 || frit->ShowPosX() >= WIDTH || frit->ShowPosY() >= HEIGHT)
+		{
+			BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
+		}
+		else if (frit->checkrange() == false)
+		{
+			BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
+		}
+		else
+		{
+			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+			{
+				double dfb;
+				dfb = MapDistance(frit->ShowPosX(), frit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
+				if ((frit->getWS() == EW) && (dfb <= (double)frit->countsphere() + fit->countsphere()))
+				{
+					BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
+					fit->counthealth(frit->showpower);
+				}
+			}
+			for (eit = Etank.begin(); eit != Etank.end(); eit++)
+			{
+				double deb;
+				deb = MapDistance(frit->ShowPosX(), frit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY);
+				if ((frit->getWS() == FW) && (deb <= (double)frit->countsphere() + eit->countsphere()))
+				{
+					BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
+					eit->counthealth(frit->showpower);
+				}
+			}
+		}
+	}
+	for (msit = M.begin(); msit != M.end(); msit++)
+	{
+		if (msit->ShowPosX() <= 0 || msit->ShowPosY() <= 0 || msit->ShowPosX() >= WIDTH || msit->ShowPosY() >= HEIGHT)
+		{
+			BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
+		}
+		else if (msit->checkrange() == false)
+		{
+			BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
+		}
+		else
+		{
+			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+			{
+				double dfb;
+				dfb = MapDistance(msit->ShowPosX(), msit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
+				if ((msit->getWS() == EW) && (dfb <= (double)msit->countsphere() + fit->countsphere()))
+				{
+					BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
+					fit->counthealth(msit->showpower);
+				}
+			}
+			for (eit = Etank.begin(); eit != Etank.end(); eit++)
+			{
+				double deb;
+				deb = MapDistance(msit->ShowPosX(), msit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY);
+				if ((msit->getWS() == FW) && (deb <= (double)msit->countsphere() + eit->countsphere()))
+				{
+					BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
+					eit->counthealth(msit->showpower);
+				}
+			}
+		}
+	}
+	for (dit = D.begin(); dit != D.end(); dit++)
+	{
+		if (dit->ShowPosX() <= 0 || dit->ShowPosY() <= 0 || dit->ShowPosX() >= WIDTH || dit->ShowPosY() >= HEIGHT)
+		{
+			BO.push_back(Boom(dit->ShowPosX(), dit->ShowPosY()));
+		}
+		else if (dit->checkrange() == false)
+		{
+			BO.push_back(Boom(dit->ShowPosX(), dit->ShowPosY()));
+		}
+		else
+		{
+			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+			{
+				double dfb;
+				dfb = MapDistance(dit->ShowPosX(), dit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
+				if ((dit->getWS() == EW) && (dfb <= (double)dit->countsphere() + fit->countsphere()))
+				{
+					BO.push_back(Boom(dit->ShowPosX(), dit->ShowPosY()));
+					fit->counthealth(dit->showpower);
+				}
+			}
+			for (eit = Etank.begin(); eit != Etank.end(); eit++)
+			{
+				double deb;
+				deb = MapDistance(dit->ShowPosX(), dit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY);
+				if ((dit->getWS() == FW) && (deb <= (double)dit->countsphere() + eit->countsphere()))
+				{
+					BO.push_back(Boom(dit->ShowPosX(), dit->ShowPosY()));
+					eit->counthealth(dit->showpower);
+				}
+			}
+		}
 	}
 }

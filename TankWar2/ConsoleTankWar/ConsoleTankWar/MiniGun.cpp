@@ -35,6 +35,12 @@ MiniGun::~MiniGun()
 
 }
 
+bool MiniGun::checkrange()
+{
+	if (mile >= range) return false;
+	else return true;
+}
+
 void MiniGun::display()
 {
 	if (visible)

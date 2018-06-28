@@ -48,7 +48,7 @@ void Bullet::display()
 
 bool Bullet::checkrange()
 {
-	if (mile==range) return false;
+	if (mile>=range) return false;
 	else return true;
 }
 
