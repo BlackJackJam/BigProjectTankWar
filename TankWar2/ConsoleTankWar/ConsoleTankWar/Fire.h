@@ -9,7 +9,7 @@ class Fire :public Object, public Weapon
 {
 public:
 	Fire();
-	Fire(int px, int py, double dr);
+	Fire(int px, int py, double dr, WSIDE w);
 	~Fire();
 	bool checkrange();
 	void display();

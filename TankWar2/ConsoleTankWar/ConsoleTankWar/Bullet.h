@@ -14,7 +14,7 @@ class Bullet :public Weapon,public Object
 {
 public:
 	Bullet();
-	Bullet(int px, int py, double dr);
+	Bullet(int px, int py, double dr,WSIDE w);
 	~Bullet();
 	void display();
 	bool checkrange();

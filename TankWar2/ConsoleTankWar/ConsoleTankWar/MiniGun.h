@@ -12,7 +12,7 @@ class MiniGun :public Object, public Weapon
 {
 public:
 	MiniGun();
-	MiniGun(int px, int py, double dr);
+	MiniGun(int px, int py, double dr, WSIDE w);
 	~MiniGun();
 	bool checkrange();
 	void display();

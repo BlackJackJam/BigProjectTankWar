@@ -319,3 +319,87 @@ void Map::DetectATTEvent()
 		}
 	}
 }
+
+void Map::TankAttack()//Ì¹¿Ë×Ô¶¯¹¥»÷
+{
+	deque<Tank>::iterator fit;
+	deque<Tank>::iterator eit;
+	deque<Missle>::iterator mit;
+	double Xdir;
+	double dd;
+	WEAPONTYPE wt;
+	for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+	{
+		for (eit = Etank.begin(); eit != Etank.end(); eit++)
+		{
+			dd = MapDistance(eit->ShowPosX(), eit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY());
+			Xdir = atan2(eit->ShowPosX() - fit->ShowPosX(), eit->ShowPosY() - fit->ShowPosX());
+			if (fit->checkUser() == false && fit->checkload(MISSLE) == true)
+			{
+				M.push_back(Missle(fit->ShowPosX(), fit->ShowPosY(),fit->ShowDir(), FW));
+				mit = M.end();
+				mit->gettarget(Etank);
+				mit->setdir(Etank);
+				fit->launchMissle();
+			}
+			else if (fit->checkUser()==false&&Xdir==fit->ShowDir()&&dd<=150)
+			{
+				wt=fit->usingWeapon();
+				switch (wt)
+				{
+				case FIRE:
+					F.push_back(Fire(fit->ShowPosX(), fit->ShowPosY(), fit->ShowDir(), FW));
+					break;
+				case DRONE:
+					D.push_back(Drone(fit->ShowPosX(), fit->ShowPosY(), fit->ShowDir(), FW));
+					break;
+				case BULLET:
+					Bu.push_back(Bullet(fit->ShowPosX(), fit->ShowPosY(), fit->ShowDir(), FW));
+					break;
+				case MINIGUN:
+					Mg.push_back(MiniGun(fit->ShowPosX(), fit->ShowPosY(), fit->ShowDir(), FW));
+					break;
+				default:
+					break;
+				}
+			}
+		}
+	}
+	for (eit = Ftank.begin(); eit != Ftank.end(); eit++)
+	{
+		for (fit = Etank.begin(); fit != Etank.end(); fit++)
+		{
+			dd = MapDistance(eit->ShowPosX(), eit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY());
+			Xdir = atan2(fit->ShowPosX() - eit->ShowPosX(), fit->ShowPosY() - eit->ShowPosX());
+			if (eit->checkload(MISSLE) == true)
+			{
+				M.push_back(Missle(eit->ShowPosX(), eit->ShowPosY(), eit->ShowDir(), EW));
+				mit = M.end();
+				mit->gettarget(Ftank);
+				mit->setdir(Ftank);
+				eit->launchMissle();
+			}
+			else if (Xdir == eit->ShowDir() && dd <= 150)
+			{
+				wt = eit->usingWeapon();
+				switch (wt)
+				{
+				case FIRE:
+					F.push_back(Fire(eit->ShowPosX(), eit->ShowPosY(), eit->ShowDir(), EW));
+					break;
+				case DRONE:
+					D.push_back(Drone(eit->ShowPosX(), eit->ShowPosY(), eit->ShowDir(), EW));
+					break;
+				case BULLET:
+					Bu.push_back(Bullet(eit->ShowPosX(), eit->ShowPosY(), eit->ShowDir(), EW));
+					break;
+				case MINIGUN:
+					Mg.push_back(MiniGun(eit->ShowPosX(), eit->ShowPosY(), eit->ShowDir(), EW));
+					break;
+				default:
+					break;
+				}
+			}
+		}
+	}
+}

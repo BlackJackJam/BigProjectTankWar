@@ -33,8 +33,8 @@ public:
 	int showhealth();
 	int shownumber();//显示坦克编号
 	bool checkUser();//检查坦克是否由用户控制
+	void launchMissle() { Mload--; };
 	WEAPONTYPE usingWeapon();//使用何种类武器
-	double setDroneDir();//设置武器发射方向，仅限drone
 protected:
 	SIDE side;
 	CONTROL con;

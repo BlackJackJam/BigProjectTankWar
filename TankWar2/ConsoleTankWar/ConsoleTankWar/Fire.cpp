@@ -15,7 +15,7 @@ Fire::Fire()
 	mile = 0;
 }
 
-Fire::Fire(int px, int py, double dr)
+Fire::Fire(int px, int py, double dr, WSIDE w)
 {
 	power = 200;
 	x = px;
@@ -27,7 +27,10 @@ Fire::Fire(int px, int py, double dr)
 	pace = 3;
 	range = 90;
 	mile = 0;
+	ws = w;
 }
+
+
 
 Fire::~Fire()
 {

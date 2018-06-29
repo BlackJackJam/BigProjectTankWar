@@ -27,6 +27,7 @@ public:
 	double MapDistance(int px1, int py1, int px2, int py2);
 	void DetectNonATTEvent();//非攻击事件检测
 	void DetectATTEvent();//攻击事件检测
+	void TankAttack();
 	friend class TankGroup;
 protected:
 	deque<Tank> Etank;

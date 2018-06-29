@@ -11,7 +11,7 @@ class Missle :public Object, public Weapon
 {
 public:
 	Missle();
-	Missle(int px, int py,double dr);
+	Missle(int px, int py,double dr, WSIDE w);
 	~Missle();
 	void display();
 	bool checkrange();

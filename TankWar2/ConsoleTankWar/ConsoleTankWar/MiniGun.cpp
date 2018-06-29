@@ -16,7 +16,7 @@ MiniGun::MiniGun()
 
 }
 
-MiniGun::MiniGun(int px, int py, double dr)
+MiniGun::MiniGun(int px, int py, double dr, WSIDE w)
 {
 	power = 20;
 	x = px;
@@ -28,7 +28,10 @@ MiniGun::MiniGun(int px, int py, double dr)
 	pace = 3;
 	range = 90;
 	mile = 0;
+	ws = w;
 }
+
+
 
 MiniGun::~MiniGun()
 {

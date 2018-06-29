@@ -17,7 +17,7 @@ Missle::Missle()
 
 }
 
-Missle::Missle(int px, int py, double dr)
+Missle::Missle(int px, int py, double dr, WSIDE w)
 {
 	power = 150;
 	x = px;
@@ -27,9 +27,12 @@ Missle::Missle(int px, int py, double dr)
 	exist = true;
 	sphere = 2;
 	pace = 3;
-	range = 300;
+	range = 900;
 	mile = 0;
+	ws = w;
 }
+
+
 
 Missle::~Missle()
 {
@@ -64,7 +67,11 @@ void Missle::gettarget(deque<Tank> TX)
 	{
 		double distance2;
 		distance2 = TargetDistance(*it);
-		if (distance > distance2) targetnumber = it->shownumber();
+		if (distance > distance2)
+		{
+			distance = distance2;
+			targetnumber = it->shownumber();
+		}
 	}
 }
 

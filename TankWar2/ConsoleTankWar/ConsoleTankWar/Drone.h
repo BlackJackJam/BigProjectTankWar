@@ -10,7 +10,7 @@ class Drone :public Object, public Weapon
 {
 public:
 	Drone();
-	Drone(int px, int py, double dr);
+	Drone(int px, int py, double dr, WSIDE w);
 	~Drone();
 	void display();
 	bool checkrange();

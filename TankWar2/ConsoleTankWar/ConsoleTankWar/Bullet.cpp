@@ -16,7 +16,7 @@ Bullet::Bullet()
 	mile = 0;
 }
 
-Bullet::Bullet(int px, int py, double dr)
+Bullet::Bullet(int px, int py, double dr, WSIDE w)
 {
 	power = 100;
 	x = px;
@@ -28,7 +28,9 @@ Bullet::Bullet(int px, int py, double dr)
 	pace = 3;
 	range = 90;
 	mile = 0;
+	ws = w;
 }
+
 
 Bullet::~Bullet()
 {

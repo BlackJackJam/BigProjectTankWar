@@ -201,6 +201,23 @@ bool Tank::checkUser()
 
 WEAPONTYPE Tank::usingWeapon()
 {
+	BL = checkload(BULLET);
+	if (checkload(FIRE) == true)
+	{	
+		Fload--;
+		return FIRE;
+	}
+	else if (checkload(DRONE) == true)
+	{
+		Dload--;
+		return DRONE;
+	}
+	else if (BL)
+	{
+		Bload--;
+		return BULLET;
+	}
+	else return MINIGUN;
 }
 
 

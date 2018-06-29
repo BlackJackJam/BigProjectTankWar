@@ -5,7 +5,7 @@ Drone::Drone()
 {
 }
 
-Drone::Drone(int px, int py, double dr)
+Drone::Drone(int px, int py, double dr, WSIDE w)
 {
 	power = 10;
 	x = px;
@@ -17,7 +17,9 @@ Drone::Drone(int px, int py, double dr)
 	pace = 2;
 	range = 120;
 	mile = 0;
+	ws = w;
 }
+
 
 Drone::~Drone()
 {
