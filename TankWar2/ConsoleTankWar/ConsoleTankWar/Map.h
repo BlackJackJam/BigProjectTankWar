@@ -15,6 +15,7 @@
 #include "Group.h"
 #include "RandomP.h"
 #include "Boom.h"
+#include "UserInterface.h"
 
 using namespace std;
 
@@ -28,7 +29,9 @@ public:
 	void DetectNonATTEvent();//非攻击事件检测
 	void DetectATTEvent();//攻击事件检测
 	void TankAttack();
+	void MapDisplay();
 	friend class TankGroup;
+	friend class UserInterface;
 protected:
 	deque<Tank> Etank;
 	deque<Tank> Ftank;
@@ -39,6 +42,8 @@ protected:
 	deque<Fire> F;
 	deque<Drone> D;
 	deque<Boom> BO;
+	TankGroup Fgroup;
+	TankGroup Egroup;
 	Tank UserTank;
 };
 

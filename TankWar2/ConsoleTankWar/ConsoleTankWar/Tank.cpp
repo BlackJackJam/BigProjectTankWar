@@ -199,6 +199,12 @@ bool Tank::checkUser()
 	else return false;
 }
 
+void Tank::TankDestroy()
+{
+	visible = false;
+	exist = false;
+}
+
 WEAPONTYPE Tank::usingWeapon()
 {
 	BL = checkload(BULLET);

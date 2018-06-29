@@ -20,6 +20,7 @@ public:
 	void moveO();
 	virtual bool checkrange() = 0;
 	int countsphere() { return sphere; };
+	bool ShowExist() { return exist; };
 protected:
 	int x;
 	int y;

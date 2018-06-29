@@ -33,6 +33,7 @@ public:
 	int showhealth();
 	int shownumber();//显示坦克编号
 	bool checkUser();//检查坦克是否由用户控制
+	void TankDestroy();
 	void launchMissle() { Mload--; };
 	WEAPONTYPE usingWeapon();//使用何种类武器
 protected:

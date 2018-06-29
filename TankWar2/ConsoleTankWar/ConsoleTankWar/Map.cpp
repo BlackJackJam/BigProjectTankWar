@@ -20,6 +20,76 @@ Map::Map()
 	Ftank.push_back(UserTank);
 }
 
+void Map::MapRefresh()
+{
+	deque<Tank>::iterator fit;
+	deque<Tank>::iterator eit;
+	deque<Boom>::iterator boit;
+	deque<Bullet>::iterator buit;
+	deque<Drone>::iterator dit;
+	deque<Fire>::iterator frit;
+	deque<Missle>::iterator mit;
+	deque<MiniGun>::iterator mgit;
+	deque<Box>::iterator bxit;
+	for (boit = BO.begin(); boit != BO.end(); boit++)
+	{
+		if (boit->ShowExist() == false) boit = BO.erase(boit);
+	}
+	DetectATTEvent();
+	for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+	{
+		if (fit->showhealth() <= 0)
+		{
+			BO.push_back(Boom(fit->ShowPosX(),fit->ShowPosY()));
+			fit->TankDestroy();
+			fit = Ftank.erase(fit);
+		}
+	}
+	for (eit = Etank.begin(); eit != Etank.end(); eit++)
+	{
+		if (eit->showhealth() <= 0)
+		{
+			BO.push_back(Boom(eit->ShowPosX(), eit->ShowPosY()));
+			eit->TankDestroy();
+			eit = Etank.erase(eit);
+		}
+	}
+	DetectNonATTEvent();
+	Fgroup.GetFriendDeque(Ftank);
+	Egroup.GetEnemyDeque(Etank);
+	Fgroup.tankoperate(Ftank,Etank,B);
+	Egroup.tankoperate(Etank,Ftank,B);
+	TankAttack();
+	for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+	{
+		fit->moveO();
+	}
+	for (eit = Etank.begin(); eit != Etank.end(); eit++)
+	{
+		eit->moveO();
+	}
+	for (buit = Bu.begin(); buit != Bu.end(); buit++)
+	{
+		buit->moveO();
+	}
+	for (frit = F.begin(); frit != F.end(); frit++);
+	{
+		frit->moveO();
+	}
+	for (mit = M.begin(); mit != M.end(); mit++)
+	{
+		mit->moveO();
+	}
+	for (mgit = Mg.begin(); mgit != Mg.end(); mgit++)
+	{
+		mgit->moveO();
+	}
+	for (dit = D.begin(); dit != D.end(); dit++)
+	{
+		dit->moveO();
+	}
+}
+
 double Map::MapDistance(int px1, int py1, int px2, int py2)
 {
 	double D;
@@ -134,6 +204,7 @@ void Map::DetectNonATTEvent()//¼ì²â·Ç¹¥»÷ÊÂ¼þ£¬¾ßÌå¶øÑÔÎªÓëÎäÆ÷²Ù×÷ÎÞ¹ØµÄÌ¹¿ËÅö×
 				WEAPONTYPE tp;
 				tp = bit->show();
 				eit->reload(tp);
+				bit = B.erase(bit);
 			}
 		}
 	}
@@ -153,10 +224,12 @@ void Map::DetectATTEvent()
 		if (buit->ShowPosX() <= 0 || buit->ShowPosY() <= 0 || buit->ShowPosX() >= WIDTH || buit->ShowPosY() >= HEIGHT)
 		{
 			BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
+			buit = Bu.erase(buit);
 		}
 		else if (buit->checkrange() == false)
 		{
 			BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
+			buit = Bu.erase(buit);
 		}
 		else
 		{
@@ -168,6 +241,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
 					fit->counthealth(buit->showpower);
+					buit = Bu.erase(buit);
 				}
 			}
 			for (eit = Etank.begin(); eit != Etank.end(); eit++)
@@ -178,6 +252,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
 					eit->counthealth(buit->showpower);
+					buit = Bu.erase(buit);
 				}
 			}
 		}
@@ -187,10 +262,12 @@ void Map::DetectATTEvent()
 		if (mgit->ShowPosX() <= 0 || mgit->ShowPosY() <= 0 || mgit->ShowPosX() >= WIDTH || mgit->ShowPosY() >= HEIGHT)
 		{
 			BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
+			mgit = Mg.erase(mgit);
 		}
 		else if (mgit->checkrange() == false)
 		{
 			BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
+			mgit = Mg.erase(mgit);
 		}
 		else
 		{
@@ -202,6 +279,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
 					fit->counthealth(mgit->showpower);
+					mgit = Mg.erase(mgit);
 				}
 			}
 			for (eit = Etank.begin(); eit != Etank.end(); eit++)
@@ -212,6 +290,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(mgit->ShowPosX(), mgit->ShowPosY()));
 					eit->counthealth(mgit->showpower);
+					mgit = Mg.erase(mgit);
 				}
 			}
 		}
@@ -221,10 +300,12 @@ void Map::DetectATTEvent()
 		if (frit->ShowPosX() <= 0 || frit->ShowPosY() <= 0 || frit->ShowPosX() >= WIDTH || frit->ShowPosY() >= HEIGHT)
 		{
 			BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
+			frit = F.erase(frit);
 		}
 		else if (frit->checkrange() == false)
 		{
 			BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
+			frit = F.erase(frit);
 		}
 		else
 		{
@@ -236,6 +317,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
 					fit->counthealth(frit->showpower);
+					frit = F.erase(frit);
 				}
 			}
 			for (eit = Etank.begin(); eit != Etank.end(); eit++)
@@ -246,6 +328,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(frit->ShowPosX(), frit->ShowPosY()));
 					eit->counthealth(frit->showpower);
+					frit = F.erase(frit);
 				}
 			}
 		}
@@ -255,10 +338,12 @@ void Map::DetectATTEvent()
 		if (msit->ShowPosX() <= 0 || msit->ShowPosY() <= 0 || msit->ShowPosX() >= WIDTH || msit->ShowPosY() >= HEIGHT)
 		{
 			BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
+			msit = M.erase(msit);
 		}
 		else if (msit->checkrange() == false)
 		{
 			BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
+			msit = M.erase(msit);
 		}
 		else
 		{
@@ -270,6 +355,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
 					fit->counthealth(msit->showpower);
+					msit = M.erase(msit);
 				}
 			}
 			for (eit = Etank.begin(); eit != Etank.end(); eit++)
@@ -280,6 +366,7 @@ void Map::DetectATTEvent()
 				{
 					BO.push_back(Boom(msit->ShowPosX(), msit->ShowPosY()));
 					eit->counthealth(msit->showpower);
+					msit = M.erase(msit);
 				}
 			}
 		}
@@ -289,10 +376,12 @@ void Map::DetectATTEvent()
 		if (dit->ShowPosX() <= 0 || dit->ShowPosY() <= 0 || dit->ShowPosX() >= WIDTH || dit->ShowPosY() >= HEIGHT)
 		{
 			BO.push_back(Boom(dit->ShowPosX(), dit->ShowPosY()));
+			dit = D.erase(dit);
 		}
 		else if (dit->checkrange() == false)
 		{
 			BO.push_back(Boom(dit->ShowPosX(), dit->ShowPosY()));
+			dit = D.erase(dit);
 		}
 		else
 		{
@@ -401,5 +490,54 @@ void Map::TankAttack()//Ì¹¿Ë×Ô¶¯¹¥»÷
 				}
 			}
 		}
+	}
+}
+
+void Map::MapDisplay()
+{
+	deque<Tank>::iterator fit;
+	deque<Tank>::iterator eit;
+	deque<Boom>::iterator boit;
+	deque<Bullet>::iterator buit;
+	deque<Drone>::iterator dit;
+	deque<Fire>::iterator frit;
+	deque<Missle>::iterator mit;
+	deque<MiniGun>::iterator mgit;
+	deque<Box>::iterator bxit;
+	for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+	{
+		fit->display();
+	}
+	for (eit = Etank.begin(); eit != Etank.end(); eit++)
+	{
+		eit->display();
+	}
+	for (boit = BO.begin(); boit != BO.end(); boit++)
+	{
+		boit->display();
+	}
+	for (buit = Bu.begin(); buit != Bu.end(); buit++)
+	{
+		buit->display();
+	}
+	for (frit = F.begin(); frit != F.end(); frit++)
+	{
+		frit->display();
+	}
+	for (mit = M.begin(); mit != M.end(); mit++)
+	{
+		mit->display();
+	}
+	for (mgit = Mg.begin(); mgit != Mg.end(); mgit++)
+	{
+		mgit->display();
+	}
+	for (dit = D.begin(); dit != D.end(); dit++)
+	{
+		dit->display();
+	}
+	for (bxit = B.begin(); bxit != B.end(); bxit++)
+	{
+		bxit->display();
 	}
 }
