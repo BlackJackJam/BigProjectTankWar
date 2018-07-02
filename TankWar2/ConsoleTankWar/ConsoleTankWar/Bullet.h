@@ -4,7 +4,7 @@
 
 #include "Weapon.h"
 #include "Object.h"
-#include <cmath>;
+#include <cmath>
 
 
 using namespace std;

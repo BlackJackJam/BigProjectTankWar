@@ -116,6 +116,9 @@
     <ClCompile Include="Boom.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ConsoleTankWar.rc">

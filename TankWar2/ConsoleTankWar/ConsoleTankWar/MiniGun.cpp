@@ -3,32 +3,16 @@
 
 MiniGun::MiniGun()
 {
-	power = 20;
-	x = 0;
-	y = 0;
-	dir = 0;
-	visible = false;
-	exist = false;
-	sphere = 2;
-	pace = 0;
-	range = 90;
-	mile = 0;
+	Weapon::SetPW(20);
+	reset(0, 0, 0, 3, false, false, 2, 90, 0);
 
 }
 
 MiniGun::MiniGun(int px, int py, double dr, WSIDE w)
 {
-	power = 20;
-	x = px;
-	y = py;
-	dir = dr;
-	visible = true;
-	exist = true;
-	sphere = 2;
-	pace = 3;
-	range = 90;
-	mile = 0;
-	ws = w;
+	Weapon::SetPW(20);
+	reset(px, py, dr, 3, true, true, 2, 90, 0);
+	Weapon::SetWS(w);
 }
 
 

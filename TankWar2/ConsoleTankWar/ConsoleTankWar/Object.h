@@ -5,6 +5,7 @@
 #include <graphics.h>
 #include "Environment.h"
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
@@ -12,13 +13,13 @@ class Object
 {
 public:
 	Object();
-	virtual ~Object();
-	virtual void display() = 0;
+	Object(int ox, int oy, double odir, int opace, bool oexist, bool ovisible, int osphere, int orange, int omile);
+	~Object();
 	int ShowPosX();
 	int ShowPosY();
 	double ShowDir();
 	void moveO();
-	virtual bool checkrange() = 0;
+	void reset(int ox, int oy, double odir, int opace, bool oexist, bool ovisible, int osphere, int orange, int omile);
 	int countsphere() { return sphere; };
 	bool ShowExist() { return exist; };
 protected:

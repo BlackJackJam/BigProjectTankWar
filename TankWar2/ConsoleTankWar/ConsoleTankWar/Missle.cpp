@@ -2,61 +2,9 @@
 #include "Missle.h"
 #include <cmath>
 
-Missle::Missle()
-{
-	power = 150;
-	x = 0;
-	y = 0;
-	dir = 0;
-	visible = false;
-	exist = false;
-	sphere = 2;
-	pace = 3;
-	range = 300;
-	mile = 0;
-
-}
-
-Missle::Missle(int px, int py, double dr, WSIDE w)
-{
-	power = 150;
-	x = px;
-	y = py;
-	dir = dr;
-	visible = true;
-	exist = true;
-	sphere = 2;
-	pace = 3;
-	range = 900;
-	mile = 0;
-	ws = w;
-}
 
 
-
-Missle::~Missle()
-{
-
-}
-
-void Missle::display()
-{
-	if (visible)
-	{
-		setlinecolor(0x8aaaff);
-		circle(x, y, 1);
-		setfillcolor(GREEN);
-		fillcircle(x, y, 1);
-	}
-}
-
-bool Missle::checkrange()
-{
-	if (mile == range) return false;
-	else return true;
-}
-
-void Missle::gettarget(deque<Tank> TX)
+/*void Missle::gettarget(deque<Tank> TX)
 {
 	double distance;
 	deque<Tank>::iterator it;
@@ -82,7 +30,7 @@ double Missle::TargetDistance(Tank C)
 	return distance;
 }
 
-void Missle::setdir(deque<Tank> TX)
+template <typename T> void Missle::setdir(deque<T> TX)
 {
 	int tX, tY;
 	deque<Tank>::iterator itt;
@@ -92,8 +40,8 @@ void Missle::setdir(deque<Tank> TX)
 		{
 			tX = itt->ShowPosX();
 			tY = itt->ShowPosY();
-			dir = atan2((tX - x), (tY - y))*180/PI;
+			Missle::dir = atan2((tX - x), (tY - y))*180/PI;
 		}
-		else dir = dir;
+		else Missle::dir = Missle::dir;
 	}
-}
+}*/

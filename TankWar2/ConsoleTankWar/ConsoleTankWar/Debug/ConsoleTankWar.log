@@ -1,117 +1,639 @@
-﻿  Boom.cpp
-  Box.cpp
-  Bullet.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  ConsoleTankWar.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(19): error C2061: 语法错误: 标识符“Tank”
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
+﻿  ConsoleTankWar.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2988: 不可识别的模板声明/定义
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2059: 语法错误:“<end Parse>”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(44): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(45): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(46): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(47): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(48): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(49): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(51): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(52): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(53): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(54): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(55): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(56): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(60): error C2039: “{dtor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(63): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C2143: 语法错误: 缺少“;”(在“__cdecl”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(322): error C2990: “_timespec32”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(27): note: 参见“_timespec32”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(329): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(541): error C2990: “timespec”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(40): note: 参见“timespec”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(545): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(601): warning C4161: #pragma pack(pop...): 出栈的比入栈的多
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(46): error C3203: “Missle”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(48): error C3203: “Drone”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
 c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\consoletankwar.cpp(21): error C3867: “UI::Initgraph”: 非标准语法；请使用 "&" 来创建指向成员的指针
-  Drone.cpp
-  Fire.cpp
   Group.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(19): error C2061: 语法错误: 标识符“Tank”
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(45): error C2079: “Map::Fgroup”使用未定义的 class“TankGroup”
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(46): error C2079: “Map::Egroup”使用未定义的 class“TankGroup”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2988: 不可识别的模板声明/定义
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2059: 语法错误:“<end Parse>”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(44): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(45): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(46): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(47): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(48): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(49): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(51): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(52): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(53): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(54): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(55): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(56): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(60): error C2039: “{dtor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(63): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C2143: 语法错误: 缺少“;”(在“__cdecl”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(322): error C2990: “_timespec32”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(27): note: 参见“_timespec32”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(329): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(541): error C2990: “timespec”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(40): note: 参见“timespec”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(545): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(601): warning C4161: #pragma pack(pop...): 出栈的比入栈的多
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(46): error C3203: “Missle”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(48): error C3203: “Drone”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(50): error C2079: “Map::Fgroup”使用未定义的 class“TankGroup”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(51): error C2079: “Map::Egroup”使用未定义的 class“TankGroup”
 c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\group.cpp(32): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
 c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\group.cpp(53): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
   Map.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(19): error C2061: 语法错误: 标识符“Tank”
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(239): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(243): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(250): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(254): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(277): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(281): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(288): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(292): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(315): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(319): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(326): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(330): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(353): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(357): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(364): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(368): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(391): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(395): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(401): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(405): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(430): error C2664: “void Missle::gettarget(std::deque)”: 无法将参数 1 从“std::deque<Tank,std::allocator<_Ty>>”转换为“std::deque”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2988: 不可识别的模板声明/定义
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2059: 语法错误:“<end Parse>”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(44): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(45): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(46): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(47): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(48): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(49): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(51): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(52): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(53): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(54): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(55): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(56): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(60): error C2039: “{dtor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(63): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C2143: 语法错误: 缺少“;”(在“__cdecl”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(322): error C2990: “_timespec32”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(27): note: 参见“_timespec32”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(329): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(541): error C2990: “timespec”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(40): note: 参见“timespec”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(545): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(601): warning C4161: #pragma pack(pop...): 出栈的比入栈的多
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(46): error C3203: “Missle”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(48): error C3203: “Drone”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(29): error C3203: “Drone”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(31): error C3203: “Missle”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(81): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(81): error C2039: “getWS”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
           with
           [
-              _Ty=Tank
+              _Ty=int
           ]
-  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(430): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(431): error C2664: “void Missle::setdir(std::deque)”: 无法将参数 1 从“std::deque<Tank,std::allocator<_Ty>>”转换为“std::deque”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
           with
           [
-              _Ty=Tank
+              _Ty=int
           ]
-  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(431): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(467): error C2664: “void Missle::gettarget(std::deque)”: 无法将参数 1 从“std::deque<Tank,std::allocator<_Ty>>”转换为“std::deque”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(85): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(85): error C2039: “stn”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
           with
           [
-              _Ty=Tank
+              _Ty=int
           ]
-  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(467): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(468): error C2664: “void Missle::setdir(std::deque)”: 无法将参数 1 从“std::deque<Tank,std::allocator<_Ty>>”转换为“std::deque”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
           with
           [
-              _Ty=Tank
+              _Ty=int
           ]
-  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(468): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-  MiniGun.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(89): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(89): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(90): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(90): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(95): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(95): error C2039: “getWS”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(99): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(99): error C2039: “stn”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(103): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(103): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(104): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(104): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(109): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(109): error C2039: “moveO”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(117): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(117): error C2039: “moveO”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(245): error C3203: “Missle”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(247): error C3203: “Drone”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(267): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(271): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(278): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(282): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(305): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(309): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(316): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(320): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(343): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(347): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(354): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(358): error C3867: “Weapon::showpower”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(366): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(366): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(366): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(368): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(368): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(368): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(371): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(371): error C2039: “checkrange”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(373): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(373): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(373): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(381): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(381): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(381): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(381): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(381): error C2660: “Map::MapDistance”: 函数不接受 3 个参数
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(121): note: 参见“Map::MapDistance”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(382): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(382): error C2039: “getWS”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(382): error C2039: “countsphere”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(384): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(384): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(384): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(385): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(385): error C2039: “showpower”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(392): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(392): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(392): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(392): error C3867: “Object::ShowPosY”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(392): error C2660: “Map::MapDistance”: 函数不接受 3 个参数
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(121): note: 参见“Map::MapDistance”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(393): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(393): error C2039: “getWS”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(393): error C2039: “countsphere”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(395): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(395): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(395): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(396): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(396): error C2039: “showpower”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(404): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(404): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(404): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(406): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(406): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(406): error C2039: “ShowPosY”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(409): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(409): error C2039: “checkrange”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(411): error C2839: 重载的“operator ->”的无效返回类型“int *”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(411): error C2039: “ShowPosX”: 不是“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的成员
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\deque(759): note: 参见“std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>”的声明
+          with
+          [
+              _Ty=int
+          ]
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.cpp(411): fatal error C1003: 错误计数超过 100；正在停止编译
   Missle.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  Object.cpp
-  RandomP.cpp
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2988: 不可识别的模板声明/定义
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2059: 语法错误:“<end Parse>”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(44): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(45): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(46): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(47): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(48): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(49): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(51): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(52): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(53): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(54): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(55): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(56): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(60): error C2039: “{dtor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(63): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
   Tank.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(19): error C2061: 语法错误: 标识符“Tank”
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2988: 不可识别的模板声明/定义
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2059: 语法错误:“<end Parse>”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(44): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(45): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(46): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(47): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(48): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(49): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(51): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(52): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(53): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(54): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(55): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(56): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(60): error C2039: “{dtor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(63): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C2143: 语法错误: 缺少“;”(在“__cdecl”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(322): error C2990: “_timespec32”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(27): note: 参见“_timespec32”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(329): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(541): error C2990: “timespec”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(40): note: 参见“timespec”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(545): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(601): warning C4161: #pragma pack(pop...): 出栈的比入栈的多
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\tank.cpp(13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
   UserInterface.cpp
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\bullet.h(7): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(18): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(19): error C2061: 语法错误: 标识符“Tank”
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2065: “Tank”: 未声明的标识符
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2923: “std::deque”: 对于参数“_Ty”，“Tank”不是有效的 模板 类型变量
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C2903: “allocator”: 符号既不是类 模板 也不是函数 模板
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(20): error C3203: “allocator”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Alloc”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2988: 不可识别的模板声明/定义
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(12): error C2059: 语法错误:“<end Parse>”
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(44): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(45): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(46): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(47): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(48): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(49): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(51): error C2039: “{ctor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(52): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(53): error C2352: “Weapon::SetPW”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(19): note: 参见“Weapon::SetPW”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(54): error C3861: “reset”: 找不到标识符
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(55): error C2352: “Weapon::SetWS”: 非静态成员函数的非法调用
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\weapon.h(18): note: 参见“Weapon::SetWS”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(56): warning C4508: “{ctor}”: 函数应返回一个值；假定“void”返回类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(60): error C2039: “{dtor}”: 不是“Missle”的成员
+  c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(14): note: 参见“Missle”的声明
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\missle.h(63): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C2143: 语法错误: 缺少“;”(在“__cdecl”的前面)
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(138): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(322): error C2990: “_timespec32”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(27): note: 参见“_timespec32”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(329): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(541): error C2990: “timespec”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(40): note: 参见“timespec”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(545): error C2990: “_timespec64”: 非类 模板 已经声明为类 模板
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(33): note: 参见“_timespec64”的声明
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\time.h(601): warning C4161: #pragma pack(pop...): 出栈的比入栈的多
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(46): error C3203: “Missle”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
+c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\map.h(48): error C3203: “Drone”: 未专用化的 类 模板 不能用作 模板 变量，该变量属于 模板 参数“_Ty”，应为 real 类型
   正在生成代码...
-c:\users\jimmylin\desktop\code\cpp\bigproject2\bigprojecttankwar\tankwar2\consoletankwar\consoletankwar\randomp.cpp(37): warning C4715: “RandomP::uniform”: 不是所有的控件路径都返回值

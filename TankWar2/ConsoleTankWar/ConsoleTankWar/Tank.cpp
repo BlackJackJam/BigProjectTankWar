@@ -7,9 +7,11 @@ static int N = 0;
 Tank::Tank()
 {
 	RandomP X, Y, D;
-	x = (int)X.uniform()*WIDTH;
-	y = (int)Y.uniform()*HEIGHT;
-	dir = D.uniform() * 360;
+	int tx, ty, tdir;
+	tx = (int)X.uniform()*WIDTH;
+	ty = (int)Y.uniform()*HEIGHT;
+	tdir = D.uniform() * 360;
+	reset(tx, ty, tdir, 1, false, false, 5, 0, 0);
 	health = Maxhealth;
 	side = Enemy;
 	con = AI;
@@ -19,21 +21,13 @@ Tank::Tank()
 	Dload = 0;
 	Mload = 0;
 	BL = true;
-	sphere = 5;
-	pace = 1;
-	mile = 0;
-	range = 0;
-	visible = true;
-	exist = true;
 	number = N;
 	N++;
 }
 
 Tank::Tank(int px, int py, double rdir, SIDE si, CONTROL co)
 {
-	x = px;
-	y = py;
-	dir = rdir;
+
 	health = Maxhealth;
 	side = si;
 	con = co;
@@ -43,12 +37,7 @@ Tank::Tank(int px, int py, double rdir, SIDE si, CONTROL co)
 	Dload = 0;
 	Mload = 0;
 	BL = true;
-	sphere = 5;
-	pace = 1;
-	mile = 0;
-	range = 0;
-	visible = true;
-	exist = true;
+	reset(px, py, rdir, 1, true, true, 5, 0, 0);
 	number = N;
 	N++;
 }
@@ -56,9 +45,11 @@ Tank::Tank(int px, int py, double rdir, SIDE si, CONTROL co)
 Tank::Tank(SIDE si, CONTROL co)
 {
 	RandomP X, Y, D;
-	x = (int)X.uniform()*WIDTH;
-	y = (int)Y.uniform()*HEIGHT;
-	dir = D.uniform() * 360;
+	int tx, ty;
+	double tdir;
+	tx = (int)X.uniform()*WIDTH;
+	ty = (int)Y.uniform()*HEIGHT;
+	tdir = D.uniform() * 360;
 	health = Maxhealth;
 	side = si;
 	con = co;
@@ -68,12 +59,7 @@ Tank::Tank(SIDE si, CONTROL co)
 	Dload = 0;
 	Mload = 0;
 	BL = true;
-	sphere = 5;
-	pace = 1;
-	mile = 0;
-	range = 0;
-	visible = true;
-	exist = true;
+	reset(tx, ty, tdir, 1, true, true, 5, 0, 0);
 	number = N;
 	N++;
 }

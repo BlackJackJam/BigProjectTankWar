@@ -8,40 +8,48 @@
 Map::Map()
 {
 	int i;
-	UserTank.SetTank(Friend, USER);
+	Tank* u = new Tank(Friend, USER);
 	for (i = 1; i <= TN; i++)
 	{
-		Etank.push_back(Tank(Enemy, AI));
+		Tank* p = new Tank(Enemy, AI);
+		Etank.push_back(p);
 	}
 	for (i = 1; i <= TN - 1; i++)
 	{
-		Ftank.push_back(Tank(Friend, AI));
+		Tank* p = new Tank(Friend, AI);
+		Ftank.push_back(p);
 	}
-	Ftank.push_back(UserTank);
+	Ftank.push_back(u);
 }
 
 void Map::MapRefresh()
 {
-	deque<Tank>::iterator fit;
-	deque<Tank>::iterator eit;
-	deque<Boom>::iterator boit;
-	deque<Bullet>::iterator buit;
-	deque<Drone>::iterator dit;
-	deque<Fire>::iterator frit;
-	deque<Missle>::iterator mit;
-	deque<MiniGun>::iterator mgit;
-	deque<Box>::iterator bxit;
+	deque<Tank*>::iterator fit;
+	deque<Tank*>::iterator eit;
+	deque<Boom*>::iterator boit;
+	deque<Bullet*>::iterator buit;
+	deque<Drone*>::iterator dit;
+	deque<Fire*>::iterator frit;
+	deque<Missle*>::iterator mit;
+	deque<MiniGun*>::iterator mgit;
+	deque<Box*>::iterator bxit;
 	for (boit = BO.begin(); boit != BO.end(); boit++)
 	{
-		if (boit->ShowExist() == false) boit = BO.erase(boit);
+		if ((*boit)->ShowExist() == false)
+		{
+			delete *boit;
+			boit = BO.erase(boit);
+		}
+			
 	}
 	DetectATTEvent();
 	for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
 	{
-		if (fit->showhealth() <= 0)
+		if ((*fit)->showhealth() <= 0)
 		{
-			BO.push_back(Boom(fit->ShowPosX(),fit->ShowPosY()));
-			fit->TankDestroy();
+			BO.push_back(Boom((*fit)->ShowPosX(),(*fit)->ShowPosY()));
+			(*fit)->TankDestroy();
+			delete *fit;
 			fit = Ftank.erase(fit);
 		}
 	}
@@ -78,6 +86,34 @@ void Map::MapRefresh()
 	}
 	for (mit = M.begin(); mit != M.end(); mit++)
 	{
+		if (mit->getWS() == EW)
+		{
+			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
+			{
+				if (fit->shownumber() == mit->stn())
+				{
+					double dd;
+					double dy, dx;
+					dy = (double)fit->ShowPosY() - mit->ShowPosY();
+					dx = (double)fit->ShowPosX() - mit->ShowPosY();
+					dd = atan2(dy,dx)*180/PI;
+				}
+			}
+		}
+		else if (mit->getWS() == FW)
+		{
+			for (eit = Etank.begin(); eit != Etank.end(); eit++)
+			{
+				if (eit->shownumber() == mit->stn())
+				{
+					double dd;
+					double dy, dx;
+					dy = (double)eit->ShowPosY() - mit->ShowPosY();
+					dx = (double)eit->ShowPosX() - mit->ShowPosX();
+					dd = atan2(dy,dx)*180/PI;
+				}
+			}
+		}
 		mit->moveO();
 	}
 	for (mgit = Mg.begin(); mgit != Mg.end(); mgit++)
@@ -119,7 +155,7 @@ void Map::DetectNonATTEvent()//¼ì²â·Ç¹¥»÷ÊÂ¼þ£¬¾ßÌå¶øÑÔÎªÓëÎäÆ÷²Ù×÷ÎÞ¹ØµÄÌ¹¿ËÅö×
 				ex = eit->ShowPosX();
 				ey = eit->ShowPosY();
 				DD = MapDistance(fit->ShowPosX(), fit->ShowPosY(), eit->ShowPosX(), eit->ShowPosY());
-				drx = atan2((fx - ex), (fy - ey)) * 180 / PI;
+				drx = atan2((fy - ey), (fx - ex)) * 180 / PI;
 				if (DD <=(double) eit->countsphere() + fit->countsphere())
 				{
 					eit->setdir(-drx + 10 - 20 * DX.uniform());
@@ -236,7 +272,7 @@ void Map::DetectATTEvent()
 			for (fit = Ftank.begin(); fit != Ftank.end(); fit++)
 			{
 				double dfb;
-				dfb = MapDistance(buit->ShowPosX(), buit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
+				dfb = MapDistance((buit)->ShowPosX(), (buit)->ShowPosY(), fit->ShowPosX(), fit->ShowPosY);
 				if ((buit->getWS() == EW)&&(dfb<=(double)buit->countsphere()+fit->countsphere()))
 				{
 					BO.push_back(Boom(buit->ShowPosX(), buit->ShowPosY()));
@@ -422,14 +458,14 @@ void Map::TankAttack()//Ì¹¿Ë×Ô¶¯¹¥»÷
 		for (eit = Etank.begin(); eit != Etank.end(); eit++)
 		{
 			dd = MapDistance(eit->ShowPosX(), eit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY());
-			Xdir = atan2(eit->ShowPosX() - fit->ShowPosX(), eit->ShowPosY() - fit->ShowPosX());
+			Xdir = atan2(eit->ShowPosY() - fit->ShowPosY(), eit->ShowPosX() - fit->ShowPosX())*180/PI;
 			if (fit->checkUser() == false && fit->checkload(MISSLE) == true)
 			{
-				M.push_back(Missle(fit->ShowPosX(), fit->ShowPosY(),fit->ShowDir(), FW));
+				M.push_back(Missle(fit->ShowPosX(), fit->ShowPosY(), fit->ShowDir(), FW));
 				mit = M.end();
-				mit->gettarget(Etank);
-				mit->setdir(Etank);
-				fit->launchMissle();
+				mit->settargetnumber(eit->shownumber());
+				double dm;
+				dm = atan2((eit->ShowPosY() - mit->ShowPosY()), (eit->ShowPosX() - mit->ShowPosX())) * 180 / PI;
 			}
 			else if (fit->checkUser()==false&&Xdir==fit->ShowDir()&&dd<=150)
 			{
@@ -459,14 +495,14 @@ void Map::TankAttack()//Ì¹¿Ë×Ô¶¯¹¥»÷
 		for (fit = Etank.begin(); fit != Etank.end(); fit++)
 		{
 			dd = MapDistance(eit->ShowPosX(), eit->ShowPosY(), fit->ShowPosX(), fit->ShowPosY());
-			Xdir = atan2(fit->ShowPosX() - eit->ShowPosX(), fit->ShowPosY() - eit->ShowPosX());
+			Xdir = atan2(fit->ShowPosY() - eit->ShowPosY(), fit->ShowPosX() - eit->ShowPosX())*180/PI;
 			if (eit->checkload(MISSLE) == true)
 			{
 				M.push_back(Missle(eit->ShowPosX(), eit->ShowPosY(), eit->ShowDir(), EW));
 				mit = M.end();
-				mit->gettarget(Ftank);
-				mit->setdir(Ftank);
-				eit->launchMissle();
+				mit->settargetnumber(fit->shownumber());
+				double dm;
+				dm = atan2((fit->ShowPosY() - mit->ShowPosY()), (fit->ShowPosX() - mit->ShowPosX()))*180/PI;
 			}
 			else if (Xdir == eit->ShowDir() && dd <= 150)
 			{

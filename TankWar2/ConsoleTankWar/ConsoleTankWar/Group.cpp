@@ -68,8 +68,8 @@ void TankGroup::tankoperate(deque<Tank>& TA,deque<Tank>& TB,deque<Box> &B)
 			int tx, ty;
 			tx = tt->ShowPosX();
 			ty = tt->ShowPosY();
-			d1 = atan2((tx - avrX), (ty - avrY))*180/PI;
-			d2 = atan2((avrX - EavrX), (avrY - EavrY))*180/PI;
+			d1 = atan2((ty - avrY), (tx - avrX))*180/PI;
+			d2 = atan2((avrY - EavrY), (avrX - EavrX))*180/PI;
 			d = (d1 + d2) / 2;
 			if (tt->checkUser()==false) tt->setdir(d);
 		}
@@ -82,8 +82,8 @@ void TankGroup::tankoperate(deque<Tank>& TA,deque<Tank>& TB,deque<Box> &B)
 			int tx, ty;
 			tx = tt->ShowPosX();
 			ty = tt->ShowPosY();
-			d1 = atan2((avrX - tx), (avrY - ty))*180/PI;
-			d2 = atan2((EavrX - avrX), (EavrY - avrY))*180/PI;
+			d1 = atan2((avrY - ty), (avrX - tx))*180/PI;
+			d2 = atan2((EavrY - avrY), (EavrX - avrX))*180/PI;
 			d = (d1 + d2) / 2;
 			if (tt->checkUser()==false) tt->setdir(d);
 		}
@@ -131,13 +131,13 @@ void TankGroup::Scanenemy(deque<Tank> &F, deque<Tank> &E)
 			if (fight == true)
 			{
 				double drr;
-				drr = atan2((ex - fiter->ShowPosX()), (ey - fiter->ShowPosY())) * 180 / PI;
+				drr = atan2((ey - fiter->ShowPosY()), (ex - fiter->ShowPosX())) * 180 / PI;
 				if (fiter->checkUser() == false) fiter->setdir(drr);
 			}
 			else
 			{
 				double drr;
-				drr = atan2((-ex + fiter->ShowPosX()), (-ey + fiter->ShowPosY())) * 180 / PI;
+				drr = atan2((-ey + fiter->ShowPosY()), (-ex + fiter->ShowPosX())) * 180 / PI;
 				drr += hc.uniform() * 60 - 30;
 				if (fiter->checkUser()==false) fiter->setdir(drr);
 			}
@@ -164,7 +164,7 @@ void TankGroup::ScanBox(deque<Tank>& T, deque<Box>& B)
 				by = itb->ShowPosY();
 			}
 			double dib;
-			dib = atan2(bx - itt->ShowPosX(), by - itt->ShowPosY());
+			dib = atan2(by - itt->ShowPosY(), bx - itt->ShowPosX())*180/PI;
 			if (itt->checkUser()==false) itt->setdir(dib);
 		}
 	}

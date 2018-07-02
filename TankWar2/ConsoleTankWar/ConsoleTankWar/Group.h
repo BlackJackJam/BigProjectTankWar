@@ -2,10 +2,10 @@
 #ifndef __GROUP_H__
 #define __GROUP_H__
 
-#include "Tank.h"
-#include "Object.h"
-#include <deque>
 #include "Environment.h"
+#include <deque>
+#include "Object.h"
+#include "Tank.h"
 #include "Map.h"
 
 using namespace std;

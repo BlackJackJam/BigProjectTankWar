@@ -2,17 +2,22 @@
 #ifndef __MAP_H__
 #define __MAP_H__
 
+#include <deque>
+#include <iostream>
+#include "Weapon.h"
 #include "Object.h"
 #include "Tank.h"
 #include "Box.h"
+
 #include "Bullet.h"
 #include "MiniGun.h"
 #include "Missle.h"
 #include "Fire.h"
 #include "Drone.h"
-#include <deque>
-#include "Environment.h"
 #include "Group.h"
+
+#include "Environment.h"
+
 #include "RandomP.h"
 #include "Boom.h"
 #include "UserInterface.h"
@@ -33,15 +38,15 @@ public:
 	friend class TankGroup;
 	friend class UserInterface;
 protected:
-	deque<Tank> Etank;
-	deque<Tank> Ftank;
-	deque<Box> B;
-	deque<Bullet> Bu;
-	deque<MiniGun> Mg;
-	deque<Missle> M;
-	deque<Fire> F;
-	deque<Drone> D;
-	deque<Boom> BO;
+	deque<Tank*>& Etank;
+	deque<Tank*>& Ftank;
+	deque<Box*>& B;
+	deque<Bullet*>& Bu;
+	deque<MiniGun*>& Mg;
+	deque<Missle*>& M;
+	deque<Fire*>& F;
+	deque<Drone*>& D;
+	deque<Boom*>& BO;
 	TankGroup Fgroup;
 	TankGroup Egroup;
 	Tank UserTank;
